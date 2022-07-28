@@ -1,0 +1,31 @@
+{
+  "name": "frontierscum",
+  "title": "Frontier Scum",
+  "description": "Foundry VTT system for Frontier Scum.",
+  "version": "1.0.0",
+  "templateVersion": 2,
+  "author": "mcglintlock",
+  "scripts": [],
+  "esmodules": ["module/frontierscum.js"],
+  "styles": ["css/frontierscum.css"],
+  "packs": [
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": true,
+  "initiative": "1d6",
+  "gridDistance": 10,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "hitPoints",
+  "secondaryTokenAttribute": null,
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
+  "url": "https://github.com/mcglincy/frontierscum-foundry-vtt",
+  "manifest": "https://github.com/mcglincy/frontierscum-foundry-vtt/releases/latest/download/system.json",
+  "download": "https://github.com/mcglincy/frontierscum-foundry-vtt/releases/latest/download/system.zip"
+}

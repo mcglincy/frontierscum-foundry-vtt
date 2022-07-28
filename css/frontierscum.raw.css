@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Smokum&family=Satisfy&family=Inconsolata&family=Ultra&family=Alegreya&display=swap");
+.frontierscum {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 700px;
+}
+
+.frontierscum {
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* When the checkbox is checked, add a blue background */
+}
+.frontierscum input[type=number],
+.frontierscum input[type=text] {
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px dotted black;
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  text-align: center;
+}
+.frontierscum textarea {
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 0;
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  padding: 2px;
+  resize: none;
+}
+.frontierscum .top-label {
+  background-color: black;
+  color: white;
+  font-family: "Smokum", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.frontierscum .top-label span {
+  font-size: 1.5rem;
+}
+.frontierscum label {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  width: unset;
+}
+.frontierscum .check-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.frontierscum .check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.frontierscum .checkmark {
+  position: absolute;
+  top: -3px;
+  left: 12px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px dotted black;
+  font-size: 2rem;
+}
+.frontierscum .check-container input:checked ~ .checkmark {
+  background-color: black;
+}
+.frontierscum .check-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.frontierscum .check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.frontierscum button.sheet-blank-button.ability-button {
+  text-transform: uppercase;
+}
+
+body.sheet-darkmode .charsheet {
+  background-color: black;
+  color: white;
+}
+body.sheet-darkmode .charsheet .frontierscum {
+  border: 1px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum input[type=number],
+body.sheet-darkmode .charsheet .frontierscum input[type=text] {
+  border-bottom: 1px dotted white;
+}
+body.sheet-darkmode .charsheet .frontierscum textarea {
+  background-color: #333;
+}
+body.sheet-darkmode .charsheet .frontierscum .top-label {
+  background-color: white;
+  color: black;
+}
+body.sheet-darkmode .charsheet .frontierscum .checkmark {
+  border: 1px dotted white;
+}
+body.sheet-darkmode .charsheet .frontierscum .check-container input:checked ~ .checkmark {
+  background-color: white;
+}
+body.sheet-darkmode .charsheet .frontierscum .horsesheet-header .title {
+  color: white;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+body.sheet-darkmode .charsheet .frontierscum .horsesheet-header .rider {
+  filter: invert(100%);
+}
+body.sheet-darkmode .charsheet .frontierscum .horsesheet-body .inner1, body.sheet-darkmode .charsheet .frontierscum .horsesheet-body .inner2 {
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-header .fs-logo {
+  border-bottom: 4px solid white;
+  border-top: 4px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .abilities-block .ability-col .ability {
+  border-left: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .abilities-block .ability-col .ability .name {
+  background-color: white;
+  color: black;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .abilities-block .ability-col .ability:last-child {
+  border-bottom: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .portrait-col {
+  border: 2px solid white;
+  flex: 0 0 280;
+  padding: 4px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .portrait-col .portrait-inner {
+  border: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .condition-col {
+  border: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .condition-col .drunk {
+  border-top: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .condition-col .notes {
+  border-top: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-section {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-section.skills .skills-label {
+  border-bottom: 2px solid white;
+}
+body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .eq-section.skills .eq-row {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.frontierscum .window-content {
+  background: none;
+  background-color: white;
+}
+.frontierscum .scumsheet .scumsheet-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.frontierscum .scumsheet .scumsheet-header .fs-logo {
+  border-bottom: 4px solid black;
+  border-top: 4px solid black;
+  font-family: "Smokum", cursive;
+  font-size: 2.8rem;
+  line-height: 2.4rem;
+  padding-top: 2px;
+  margin-bottom: 5px;
+}
+.frontierscum .scumsheet .scumsheet-header .wanted {
+  font-family: "Ultra", serif;
+  font-size: 7.8rem;
+  line-height: 5.8rem;
+}
+.frontierscum .scumsheet .scumsheet-header .dead-or-alive {
+  font-family: "Satisfy", cursive;
+  font-size: 1.4rem;
+}
+.frontierscum .scumsheet .scumsheet-header .dead-or-alive label {
+  display: inline;
+}
+.frontierscum .scumsheet .scumsheet-header .dead-or-alive label .checkmark {
+  top: 5px;
+  left: 15px;
+}
+.frontierscum .scumsheet .scumsheet-header .dead-or-alive label span {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+.frontierscum .scumsheet-body {
+  display: flex;
+  flex-direction: column;
+}
+.frontierscum .scumsheet-body .name-block {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.frontierscum .scumsheet-body .name-block .fields {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.frontierscum .scumsheet-body .name-block .fields label {
+  font-family: "Smokum", cursive;
+  font-size: 1.7rem;
+  margin-right: 4px;
+}
+.frontierscum .scumsheet-body .name-block .fields input {
+  flex: 1;
+}
+.frontierscum .scumsheet-body .name-block .fields .field-row {
+  display: flex;
+  width: 100%;
+}
+.frontierscum .scumsheet-body .name-block .rewards {
+  flex: 0 0 100px;
+  margin-left: 10px;
+  text-align: center;
+}
+.frontierscum .scumsheet-body .name-block .rewards label {
+  font-family: "Ultra", serif;
+  font-size: 1.2rem;
+}
+.frontierscum .scumsheet-body .name-block .rewards textarea {
+  height: 70px;
+  width: 115px;
+}
+.frontierscum .scumsheet-body .abilities-block {
+  display: flex;
+  margin-bottom: 10px;
+}
+.frontierscum .scumsheet-body .abilities-block .ability-col {
+  display: flex;
+  flex: 0 0 90px;
+  flex-direction: column;
+}
+.frontierscum .scumsheet-body .abilities-block .ability-col .ability {
+  align-items: center;
+  border-bottom: none;
+  border-left: 2px solid black;
+  border-right: none;
+  border-top: none;
+  display: flex;
+  flex: 0 0 63px;
+  flex-direction: column;
+}
+.frontierscum .scumsheet-body .abilities-block .ability-col .ability .name {
+  background-color: black;
+  color: white;
+  flex: 0 0 30px;
+  width: 100%;
+}
+.frontierscum .scumsheet-body .abilities-block .ability-col .ability .value {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px;
+  width: 100%;
+}
+.frontierscum .scumsheet-body .abilities-block .ability-col .ability .value input {
+  text-align: center;
+  width: 30px;
+}
+.frontierscum .scumsheet-body .abilities-block .ability-col .ability:last-child {
+  border-bottom: 2px solid black;
+}
+.frontierscum .scumsheet-body .abilities-block .portrait-col {
+  align-items: center;
+  border: 2px solid black;
+  display: flex;
+  flex: 0 0 252px;
+  justify-content: center;
+}
+.frontierscum .scumsheet-body .abilities-block .portrait-col img {
+  border: 2px solid black;
+  height: 240px;
+  width: 240px;
+  padding: 0;
+  margin: 0;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col {
+  border: 2px solid black;
+  display: flex;
+  margin-left: 2px;
+  flex: 0 0 314px;
+  flex-direction: column;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .conditions-and-notes {
+  flex: 0 0 30px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row {
+  display: flex;
+  flex: 0 0 40px;
+  padding: 4px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row textarea {
+  font-size: 0.8rem;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 50px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .non-checkbox {
+  flex: 1;
+  font-family: "Inconsolata", monospace;
+  font-size: 0.8rem;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .non-checkbox input {
+  font-size: 0.8rem;
+  height: 1rem;
+  width: 70px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .checkmark {
+  left: 5px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .drunk {
+  border-top: 2px solid black;
+  flex: 0 0 42px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row.notes {
+  border-top: 2px solid black;
+  flex: 0 0 62px;
+  padding-bottom: 0px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row.notes textarea {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+.frontierscum .scumsheet-body .hp-block {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.frontierscum .scumsheet-body .hp-block .stat-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.frontierscum .scumsheet-body .hp-block .stat-block input {
+  width: 100px;
+}
+.frontierscum .scumsheet-body .hp-block .stat-block .name span {
+  font-family: "Ultra", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.frontierscum .scumsheet-body .hp-block .stat-block .value input {
+  font-size: 1.5rem;
+  width: 2.8rem;
+}
+.frontierscum .scumsheet-body .equipment-block {
+  display: flex;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-col-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-col-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-col-3 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-section {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-row {
+  display: flex;
+  flex: 0 0 30px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-row input {
+  height: 100%;
+  width: 100%;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-section.skills {
+  border-left: none;
+  border-right: none;
+  justify-content: space-between;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-section.skills .skills-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  flex: 0 0 30px;
+  font-family: "Ultra", serif;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-section.skills .eq-row {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-section.on-your-back {
+  margin-top: 3px;
+  height: 149px;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-section.on-your-back .eq-row {
+  flex: 0 0 40px;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-section.in-your-pockets {
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 273px;
+}
+.frontierscum .scumsheet-body .equipment-block .eq-section.in-your-pockets .eq-row {
+  border-left: none;
+  border-right: none;
+  flex: 1;
+}
+.frontierscum .horsesheet .horsesheet-header .title {
+  color: black;
+  font-family: "Ultra", serif;
+  font-size: 13rem;
+  letter-spacing: 2.5rem;
+  line-height: 11rem;
+  padding-left: 25px;
+  text-align: center;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+.frontierscum .horsesheet .horsesheet-header .rider {
+  background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/rider1.png");
+  background-size: 100% 100%;
+  height: 290px;
+  width: 290px;
+  position: absolute;
+  top: 50px;
+  left: 400px;
+}
+
+.charsheet .frontierscum .horsesheet-body {
+  display: flex;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.charsheet .frontierscum .horsesheet-body input {
+  width: 100%;
+}
+.charsheet .frontierscum .horsesheet-body .inner1 {
+  padding: 2px;
+}
+.charsheet .frontierscum .horsesheet-body .inner1, .charsheet .frontierscum .horsesheet-body .inner2 {
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  flex: 1;
+}
+.charsheet .frontierscum .horsesheet-body .name-block {
+  padding: 5px;
+}
+.charsheet .frontierscum .horsesheet-body .name-block .field-row {
+  display: flex;
+  margin-bottom: 4px;
+}
+.charsheet .frontierscum .horsesheet-body .name-block .field-row label {
+  font-family: "Smokum", cursive;
+  font-size: 2.5rem;
+  margin-right: 4px;
+}
+.charsheet .frontierscum .horsesheet-body .name-block .field-row input {
+  padding-left: 10px;
+  text-align: left;
+}
+.charsheet .frontierscum .horsesheet-body .on-your-horse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.charsheet .frontierscum .horsesheet-body .on-your-horse .on-horse-row {
+  flex: 0 0 20px;
+  padding: 2px;
+}
+.charsheet .frontierscum .horsesheet-body .stolen-block {
+  display: flex;
+  justify-content: center;
+}
+.charsheet .frontierscum .horsesheet-body .stolen-block .stats {
+  width: 300px;
+}
+.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row {
+  display: flex;
+  justify-content: center;
+}
+.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block {
+  display: flex;
+  align-items: center;
+}
+.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block label {
+  font-family: "Ultra", serif;
+  font-size: 2rem;
+  margin-right: 8px;
+  width: 120px;
+  text-align: right;
+}
+.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe {
+  background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horseshoe.png");
+  background-size: 100% 100%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe input {
+  margin-right: 8px;
+  width: 20px;
+}
+.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block:last-child label {
+  width: 80px;
+}
+.charsheet .frontierscum .horsesheet-body .horse1 {
+  background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead1.png");
+  background-size: 100% 100%;
+  height: 190px;
+  width: 190px;
+  position: absolute;
+  left: 62px;
+  top: 780px;
+}
+.charsheet .frontierscum .horsesheet-body .horse2 {
+  background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead2.png");
+  background-size: 100% 100%;
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  left: 540px;
+  top: 778px;
+}

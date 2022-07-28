@@ -1,0 +1,254 @@
+.frontierscum .scumsheet-body {
+  display: flex;
+  flex-direction: column;
+
+  .name-block {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    .fields {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      label {
+        font-family: $label-font;
+        font-size: 1.7rem;
+        margin-right: 4px;
+      }
+      input {
+        flex: 1;
+      }
+      .field-row {
+        display: flex;
+        width: 100%;
+      }
+    }
+    .rewards {
+      flex: 0 0 100px;
+      margin-left: 10px;
+      text-align: center;
+      label {
+        font-family: $slab-font;
+        font-size: 1.2rem;
+      }
+      textarea {
+        height: 70px;
+        width: 115px;
+      }
+    }
+  }
+
+  .abilities-block {
+    display: flex;
+    margin-bottom: 10px;
+    .ability-col {
+      display: flex;
+      flex: 0 0 90px;
+      flex-direction: column;
+      .ability {
+        align-items: center;
+        border-bottom: none;
+        border-left: $border;
+        border-right: none;
+        border-top: none;
+        display: flex;
+        flex: 0 0 63px;
+        flex-direction: column;
+        .name {
+          background-color: black;
+          color: white;
+          flex: 0 0 30px;
+          width: 100%;
+        }
+        .value {
+          align-items: center;
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          justify-content: center;
+          padding: 2px;
+          width: 100%;
+          input {
+            text-align: center;
+            width: 30px;
+          }
+        }
+      }
+      .ability:last-child {
+        border-bottom: $border;
+      } 
+    }
+    .portrait-col {
+      align-items: center;
+      border: 2px solid black;
+      display: flex;
+      flex: 0 0 252px;
+      justify-content: center;
+      img {
+        border: 2px solid black;
+        height: 240px;
+        width: 240px;
+        padding: 0;
+        margin: 0;
+      }  
+    }
+    .condition-col {
+      border: $border;
+      display: flex;
+      margin-left: 2px;
+      flex: 0 0 314px;
+      flex-direction: column;
+      .conditions-and-notes {
+        flex: 0 0 30px;
+      }
+      .condition-row {
+        display: flex;
+        flex: 0 0 40px;
+        padding: 4px;
+        textarea {
+          font-size: 0.8rem;
+        }
+        .checkbox {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 50px;
+        }
+        .non-checkbox {
+          flex: 1;          
+          font-family: $mono-font;
+          font-size: 0.8rem;
+          input {
+            font-size: 0.8rem;
+            height: 1.0rem;
+            width: 70px;
+          }
+        }
+        .checkmark {
+          // top: 5px;
+          left: 5px;
+        }        
+      }        
+      .drunk {
+        border-top: $border;
+        flex: 0 0 42px;
+      }
+      .condition-row.notes {
+        border-top: $border;
+        flex: 0 0 62px;
+        padding-bottom: 0px;
+        textarea {
+          border: none;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .hp-block {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    .stat-block {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      input {
+        width: 100px;
+      }
+      .name span {
+          font-family: $slab-font;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+      }
+      .value {
+        input {
+          font-size: 1.5rem;
+          width: 2.8rem;
+        }
+      }
+    }
+  }
+  .equipment-block {
+    display: flex;
+    .eq-col-1 {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .eq-col-2 {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+    .eq-col-3 {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }      
+    .eq-section {
+      border-bottom: $border;
+      border-left: $border;
+      border-right: $border;
+      display: flex;
+      flex-direction: column;
+    }
+    .eq-row {
+      display: flex;
+      flex: 0 0 30px;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2px;
+      input {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .eq-section.skills {
+      border-left: none;
+      border-right: none;
+      justify-content: space-between;
+      .skills-label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: $border;
+        flex: 0 0 30px;
+        font-family: $slab-font;
+        font-size: 1.2rem;
+        line-height: 1.0rem;
+        text-transform: uppercase;
+      }  
+      .eq-row {
+        border-left: $border;
+        border-right: $border;  
+      }
+    }
+    .eq-section.on-your-back {
+      margin-top: 3px;
+      height: 149px;
+      .eq-row {
+        flex: 0 0 40px;
+      }
+    }
+    .eq-section.in-your-pockets {      
+      justify-content: space-between;
+      border-bottom: $border;
+      border-left: $border;
+      border-right: $border;
+      height: 273px;
+      .eq-row {
+        border-left: none;
+        border-right: none;
+        flex: 1;
+        input[type='text'] {
+          //font-size: 5px;
+        }
+      }          
+    }      
+  }
+}

@@ -1,0 +1,24 @@
+.scumsheet-header
+  .fs-logo FRONTIER SCUM
+  .wanted WANTED
+  .dead-or-alive
+    label(class='check-container')
+      | <input type="radio" name="data.wanted" value="deadOrAlive" {{#ifEq data.data.wanted 'deadOrAlive'}}checked{{/ifEq}} />   
+      span(class='checkmark')   
+      | &nbsp;
+      span dead or alive
+      | &nbsp;
+    | / 
+    label(class='check-container')
+      | <input type="radio" name="data.wanted" value="dead" {{#ifEq data.data.wanted 'dead'}}checked{{/ifEq}} />   
+      span(class='checkmark')   
+      | &nbsp;
+      span dead
+      | &nbsp;
+    | /
+    label(class='check-container')
+      | <input type="radio" name="data.wanted" value="alive" {{#ifEq data.data.wanted 'alive'}}checked{{/ifEq}} />   
+      span(class='checkmark')   
+      | &nbsp;
+      span alive
+      | &nbsp;

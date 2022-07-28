@@ -1,0 +1,44 @@
+.frontierscum {
+  .window-content {
+    background: none;
+    background-color: white;
+    .scumsheet {
+      // margin: 10px;
+    }
+  }
+}
+.frontierscum .scumsheet .scumsheet-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  .fs-logo {
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    font-family: $logo-font;
+    font-size: 2.8rem;
+    line-height: 2.4rem;
+    padding-top: 2px;
+    margin-bottom: 5px;
+  }
+  .wanted {
+    font-family: $slab-font;
+    font-size: 7.8rem;
+    line-height: 5.8rem;
+  }
+  .dead-or-alive {
+    font-family: $cursive-font;
+    font-size: 1.4rem;
+    label {
+      display: inline;
+      .checkmark {
+        top: 5px;
+        left: 15px;
+      }
+      span {
+        font-size: 1.4rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

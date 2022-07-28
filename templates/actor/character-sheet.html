@@ -1,0 +1,204 @@
+
+<input type="hidden" name="attr_sheet_mode" value="scum"/>
+<form class="frontierscum">
+  <div class="scumsheet">
+    <div class="scumsheet-header">
+      <div class="fs-logo">FRONTIER SCUM</div>
+      <div class="wanted">WANTED</div>
+      <div class="dead-or-alive">
+        <label class="check-container"><input type="radio" name="data.wanted" value="deadOrAlive" {{#ifEq data.data.wanted 'deadOrAlive'}}checked{{/ifEq}} />   <span class="checkmark">  </span>&nbsp;<span>dead or alive</span>&nbsp;</label>/ 
+        <label class="check-container"><input type="radio" name="data.wanted" value="dead" {{#ifEq data.data.wanted 'dead'}}checked{{/ifEq}} />   <span class="checkmark">  </span>&nbsp;<span>dead</span>&nbsp;</label>/
+        <label class="check-container"><input type="radio" name="data.wanted" value="alive" {{#ifEq data.data.wanted 'alive'}}checked{{/ifEq}} />   <span class="checkmark">  </span>&nbsp;<span>alive</span>&nbsp;</label>
+      </div>
+    </div>
+    <div class="scumsheet-body">
+      <div class="name-block">
+        <div class="fields"> 
+          <div class="field-row">
+            <label>name</label>
+            <input type="text" name="name" value="{{actor.name}}" placeholder="Kid Pomade" spellcheck="false"/>
+          </div>
+          <div class="field-row">
+            <label>a</label>
+            <input type="text" name="data.background" value="{{data.data.background}}" placeholder="Drifter" spellcheck="false"/>
+          </div>
+          <div class="field-row">
+            <label>wanted for</label>
+            <input type="text" name="data.wantedFor" value="{{data.data.wantedFor}}" placeholder="Repeated fraud" spellcheck="false"/>
+          </div>
+        </div>
+        <div class="rewards">
+          <label data-i18n="rewards">rewards</label>
+          <textarea name="data.rewards">{{data.data.rewards}}</textarea>
+        </div>
+      </div>
+      <div class="abilities-block">
+        <div class="ability-col">
+          <div class="ability">
+            <div class="top-label name"> <span class="sheet-blank-button ability-button">grit</span></div>
+            <div class="value">
+              <input type="number" name="data.abilities.grit" value="{{data.data.abilities.grit}}" placeholder="0"/>
+            </div>
+          </div>
+          <div class="ability">
+            <div class="top-label name"> <span class="sheet-blank-button ability-button">slick</span></div>
+            <div class="value">
+              <input type="number" name="data.abilities.slick" value="{{data.data.abilities.slick}}" placeholder="0"/>
+            </div>
+          </div>
+          <div class="ability">
+            <div class="top-label name"> <span class="sheet-blank-button ability-button">wits</span></div>
+            <div class="value">
+              <input type="number" name="data.abilities.wits" value="{{data.data.abilities.wits}}" placeholder="0"/>
+            </div>
+          </div>
+          <div class="ability">
+            <div class="top-label name"> <span class="sheet-blank-button ability-button">luck</span></div>
+            <div class="value">
+              <input type="number" name="data.abilities.luck" value="{{data.data.abilities.luck}}" placeholder="0"/>
+            </div>
+          </div>
+        </div>
+        <div class="portrait-col"><img src="{{actor.img}}" title="{{actor.name}}" data-edit="img"/></div>
+        <div class="condition-col">
+          <div class="top-label conditions-and-notes">Conditions & Notes</div>
+          <div class="condition-row miserable">
+            <div class="checkbox">
+              <label class="check-container"><input type="checkbox" name="data.miserable" {{#if data.data.miserable}}checked{{/if}} /><span class="checkmark">       </span></label>
+            </div>
+            <div class="non-checkbox"><span data-i18n="miserable">Miserable</span>&nbsp;(
+              <input type="text" name="data.misery" value="{{data.data.misery}}" spellcheck="false"/>&nbsp;). <span>You don't recover HP from rest</span>.
+            </div>
+          </div>
+          <div class="condition-row drunk"> 
+            <div class="checkbox">
+              <label class="check-container"><input type="checkbox" name="data.drunk" {{#if data.data.drunk}}checked{{/if}} /><span class="checkmark">          </span></label>
+            </div>
+            <div class="non-checkbox"><span>Drunk</span>.<span>Swap your</span>
+              <input type="text" name="data.drunkAbility1" value="{{data.data.drunkAbility1}}" spellcheck="false"/>&nbsp;<span>and</span>
+              <input type="text" name="data.drunkAbility2" value="{{data.data.drunkAbility2}}" spellcheck="false"/>&nbsp;until sober.
+            </div>
+          </div>
+          <div class="condition-row notes">
+            <textarea name="data.condition1" placeholder="Notes and such" spellcheck="false">{{data.data.condition1}}</textarea>
+          </div>
+          <div class="condition-row notes">
+            <textarea name="data.condition2" placeholder="More of 'em" spellcheck="false">{{data.data.condition2}}</textarea>
+          </div>
+        </div>
+      </div>
+      <div class="hp-block"> 
+        <div class="stat-block hp"> 
+          <div class="name"> <span>hp</span></div>
+          <div class="value"> 
+            <input type="number" name="data.hp.value" value="{{data.data.hp.value}}" placeholder="0"/>
+          </div>
+        </div>
+        <div class="stat-block max-hp"> 
+          <div class="name"> <span>max hp</span></div>
+          <div class="value"> 
+            <input type="number" name="data.hp.max" value="{{data.data.hp.max}}" placeholder="0"/>
+          </div>
+        </div>
+        <div class="stat-block aces"> 
+          <div class="name"> <span>aces</span></div>
+          <div class="value"> 
+            <input type="number" name="data.aces" value="{{data.data.aces}}" placeholder="0"/>
+          </div>
+        </div>
+      </div>
+      <div class="equipment-block">
+        <div class="eq-col-1">
+          <div class="eq-section on-your-head">
+            <div class="top-label"><span>on your head</span></div>
+            <div class="eq-row">
+              <input type="text" name="data.headSlot" value="{{data.data.headSlot}}"/>
+            </div>
+          </div>
+          <div class="eq-section skills">
+            <div class="skills-label"><span>skills</span></div>
+            <div class="eq-row">
+              <input type="text" name="data.skill1" value="{{data.data.skill1}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.skill2" value="{{data.data.skill2}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.skill3" value="{{data.data.skill3}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.skill4" value="{{data.data.skill4}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.skill5" value="{{data.data.skill5}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.skill6" value="{{data.data.skill6}}"/>
+            </div>
+          </div>
+        </div>
+        <div class="eq-col-2">
+          <div class="eq-section on-your-belt">
+            <div class="top-label"><span>on your belt</span></div>
+            <div class="eq-row">
+              <input type="text" name="data.beltSlot1" value="{{data.data.beltSlot1}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.beltSlot2" value="{{data.data.beltSlot2}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.beltSlot3" value="{{data.data.beltSlot3}}"/>
+            </div>
+          </div>
+          <div class="eq-section on-your-back">
+            <div class="top-label"><span>on your back</span></div>
+            <div class="eq-row">
+              <input type="text" name="data.backSlot1" value="{{data.data.backSlot1}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.backSlot2" value="{{data.data.backSlot2}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.backSlot3" value="{{data.data.backSlot3}}"/>
+            </div>
+          </div>
+        </div>
+        <div class="eq-col-3"> 
+          <div class="eq-section in-your-pockets">
+            <div class="top-label"><span>in your pockets</span></div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot1" value="{{data.data.pocketSlot1}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot2" value="{{data.data.pocketSlot2}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot3" value="{{data.data.pocketSlot3}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot4" value="{{data.data.pocketSlot4}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot5" value="{{data.data.pocketSlot5}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot6" value="{{data.data.pocketSlot6}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot7" value="{{data.data.pocketSlot7}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot8" value="{{data.data.pocketSlot8}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot9" value="{{data.data.pocketSlot9}}"/>
+            </div>
+            <div class="eq-row">
+              <input type="text" name="data.pocketSlot10" value="{{data.data.pocketSlot10}}"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

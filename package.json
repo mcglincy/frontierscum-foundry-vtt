@@ -1,0 +1,35 @@
+{
+  "name": "frontierscum",
+  "version": "1.0.0",
+  "description": "Unofficial system for Frontier Scum on Foundry VTT.",
+  "scripts": {
+    "start": "run-p compile:* postcss",
+    "compile:pug": "npx pug3 src/pug --out ./templates -P -w",
+    "compile:sass": "npx sass src/scss/frontierscum.scss ./css/frontierscum.raw.css --no-source-map --no-charset --watch",
+    "postcss": "npx postcss ./css/frontierscum.raw.css -o ./css/frontierscum.css --use autoprefixer --watch --verbose --no-map",
+    "format": "prettier --write src/**/*.js",
+    "lint": "eslint --fix --ext .js ./module",
+    "precommit": "npm run validate",
+    "prepare": "husky install",
+    "pretty": "prettier --write .",
+    "pretty-check": "prettier --check .",
+    "validate": "npm-run-all pretty-check lint"
+  },
+  "repository": "https://github.com/mcglincy/frontierscum-foundry-vtt.git",
+  "author": "mcglincy",
+  "license": "MIT",
+  "devDependencies": {
+    "@anduh/pug-cli": "^1.0.0-alpha8",
+    "@typhonjs-fvtt/eslint-config-foundry.js": "^0.8.0",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.10.0",
+    "husky": "^7.0.4",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "prettier": "^2.7.1",
+    "pug": "^3.0.2",
+    "sass": "^1.53.0"
+  },
+  "dependencies": {}
+}

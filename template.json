@@ -1,0 +1,88 @@
+{
+  "Actor": {
+    "types": ["character", "npc", "horse"],
+    "templates": {
+      "common": {
+        "abilities": {
+          "grit": 0,
+          "slick": 0,
+          "wits": 0,
+          "luck": 0
+        },
+        "hitPoints": {
+          "max": 1,
+          "value": 1
+        },
+        "notes": ""
+      }
+    },
+    "character": {
+      "templates": ["common"],
+      "aces": 0,
+      "backSlot1": "",
+      "backSlot2": "",
+      "backSlot3": "",
+      "beltSlot1": "",
+      "beltSlot2": "",
+      "beltSlot3": "",
+      "condition1": "",
+      "condition2": "",      
+      "drunk": false,
+      "drunkAbility1": "",
+      "drunkAbility2": "",
+      "headSlot": "",
+      "miserable": false,
+      "misery": "",
+      "pocketSlot1": "",
+      "pocketSlot2": "",
+      "pocketSlot3": "",
+      "pocketSlot4": "",
+      "pocketSlot5": "",
+      "pocketSlot6": "",
+      "pocketSlot7": "",
+      "pocketSlot8": "",
+      "pocketSlot9": "",
+      "pocketSlot10": "",      
+      "skill1": "",
+      "skill2": "",
+      "skill3": "",
+      "skill4": "",
+      "skill5": "",
+      "skill6": "",
+      "wanted": "deadOrAlive",
+      "wantedCrime": "",
+      "wantedReward": 0
+    },
+    "npc": {
+      "templates": ["common"],
+      "attack": "",
+      "morale": 7,
+      "special": ""
+    },
+    "horse": {
+      "templates": ["common"],
+      "likes": "",
+      "morale": 7,
+      "notes": "",
+      "slot1": "",
+      "slot2": "",
+      "slot3": "",
+      "slot4": "",
+      "slot5": "",
+      "slot6": "",
+      "slot7": "",
+      "slot8": "",
+      "slot9": "",
+      "slot10": "",
+      "stolen": false,
+      "type": "",
+      "vehicle": ""
+    }    
+  },
+  "Item": {
+    "types": [
+    ],
+    "templates": {
+    }
+  }
+}
