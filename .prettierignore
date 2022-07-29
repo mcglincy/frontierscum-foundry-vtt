@@ -1,0 +1,6 @@
+css/
+node_modules/
+packs/
+templates/
+*.min.css
+*.min.js
