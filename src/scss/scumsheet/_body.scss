@@ -58,6 +58,12 @@
           flex: 0 0 30px;
           padding-top: 2px;
           width: 100%;
+          .ability-name {
+            cursor: pointer;
+          }
+          .ability-name:hover {
+            text-shadow: 0 0 10px white;
+          }
         }
         .value {
           align-items: center;

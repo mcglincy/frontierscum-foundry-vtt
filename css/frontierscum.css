@@ -279,6 +279,12 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   padding-top: 2px;
   width: 100%;
 }
+.frontierscum .scumsheet-body .abilities-block .ability-col .ability .name .ability-name {
+  cursor: pointer;
+}
+.frontierscum .scumsheet-body .abilities-block .ability-col .ability .name .ability-name:hover {
+  text-shadow: 0 0 10px white;
+}
 .frontierscum .scumsheet-body .abilities-block .ability-col .ability .value {
   align-items: center;
   display: flex;
