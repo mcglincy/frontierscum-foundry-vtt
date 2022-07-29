@@ -9,8 +9,8 @@ export class FSHorseSheet extends FSActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["frontierscum", "sheet", "actor", "horse"],
       template: "systems/frontierscum/templates/actor/horse-sheet.html",
-      width: 700,
-      height: 900,
+      width: 685,
+      height: 880,
       tabs: [
         {
           navSelector: ".sheet-tabs",
