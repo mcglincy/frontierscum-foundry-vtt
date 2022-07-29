@@ -20,5 +20,17 @@ export class FSCharacterSheet extends FSActorSheet {
       ],
       dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }],
     });
+  }
+
+  /** @override */
+  activateListeners(html) {
+    super.activateListeners(html);
+    html.find(".ability-name").click(this._onAbilityClick.bind(this));
+  }  
+
+  _onAbilityClick(event) {
+    event.preventDefault();
+    const ability = event.currentTarget.dataset.ability;
+    this.actor.abilityCheck(ability);
   }  
 }

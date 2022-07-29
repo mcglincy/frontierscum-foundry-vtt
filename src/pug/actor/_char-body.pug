@@ -18,7 +18,7 @@
       each abil in ['grit', 'slick', 'wits', 'luck']
         .ability
           .top-label.name 
-            span(class='sheet-blank-button ability-button')=abil
+            span(class='rollable ability-name' data-ability=`${abil}`)=abil
           .value
             input(type='number', name=`data.abilities.${abil}`, value=`{{data.data.abilities.${abil}}}`, placeholder=0)
     .portrait-col

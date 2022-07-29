@@ -89,9 +89,6 @@
 .frontierscum .check-container input:checked ~ .checkmark:after {
   display: block;
 }
-.frontierscum button.sheet-blank-button.ability-button {
-  text-transform: uppercase;
-}
 
 body.sheet-darkmode .charsheet {
   background-color: black;
