@@ -2,7 +2,12 @@
 .frontierscum {
   padding-left: 10px;
   padding-right: 10px;
-  width: 700px;
+}
+.frontierscum .scumsheet {
+  width: 650px;
+}
+.frontierscum .horsesheet {
+  width: 630px;
 }
 
 .frontierscum {
@@ -37,9 +42,6 @@
   font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
-}
-.frontierscum .top-label span {
-  font-size: 1.5rem;
 }
 .frontierscum label {
   display: inline;
@@ -181,6 +183,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   background: none;
   background-color: white;
 }
+
 .frontierscum .scumsheet .scumsheet-header {
   align-items: center;
   display: flex;
@@ -191,15 +194,15 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   border-bottom: 4px solid black;
   border-top: 4px solid black;
   font-family: "Smokum", cursive;
-  font-size: 2.8rem;
-  line-height: 2.4rem;
+  font-size: 2.5rem;
+  line-height: 2.2rem;
   padding-top: 2px;
   margin-bottom: 5px;
 }
 .frontierscum .scumsheet .scumsheet-header .wanted {
   font-family: "Ultra", serif;
-  font-size: 7.8rem;
-  line-height: 5.8rem;
+  font-size: 7rem;
+  line-height: 5.5rem;
 }
 .frontierscum .scumsheet .scumsheet-header .dead-or-alive {
   font-family: "Satisfy", cursive;
@@ -262,7 +265,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 }
 .frontierscum .scumsheet-body .abilities-block .ability-col {
   display: flex;
-  flex: 0 0 90px;
+  flex: 0 0 80px;
   flex-direction: column;
 }
 .frontierscum .scumsheet-body .abilities-block .ability-col .ability {
@@ -279,6 +282,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   background-color: black;
   color: white;
   flex: 0 0 30px;
+  padding-top: 2px;
   width: 100%;
 }
 .frontierscum .scumsheet-body .abilities-block .ability-col .ability .value {
@@ -343,14 +347,19 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .non-checkbox input {
   font-size: 0.8rem;
   height: 1rem;
-  width: 70px;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row .checkmark {
   left: 5px;
 }
-.frontierscum .scumsheet-body .abilities-block .condition-col .drunk {
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row.miserable input {
+  width: 110px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row.drunk {
   border-top: 2px solid black;
   flex: 0 0 42px;
+}
+.frontierscum .scumsheet-body .abilities-block .condition-col .condition-row.drunk input {
+  width: 70px;
 }
 .frontierscum .scumsheet-body .abilities-block .condition-col .condition-row.notes {
   border-top: 2px solid black;
@@ -463,13 +472,14 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   border-right: none;
   flex: 1;
 }
+
 .frontierscum .horsesheet .horsesheet-header .title {
   color: black;
   font-family: "Ultra", serif;
-  font-size: 13rem;
-  letter-spacing: 2.5rem;
-  line-height: 11rem;
-  padding-left: 25px;
+  font-size: 8rem;
+  letter-spacing: 1rem;
+  line-height: 7rem;
+  padding-left: 15px;
   text-align: center;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 2px;
@@ -478,79 +488,79 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .horsesheet .horsesheet-header .rider {
   background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/rider1.png");
   background-size: 100% 100%;
-  height: 290px;
-  width: 290px;
+  height: 250px;
+  width: 250px;
   position: absolute;
-  top: 50px;
-  left: 400px;
+  top: 30px;
+  left: 360px;
 }
 
-.charsheet .frontierscum .horsesheet-body {
+.frontierscum .horsesheet .horsesheet-body {
   display: flex;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-.charsheet .frontierscum .horsesheet-body input {
+.frontierscum .horsesheet .horsesheet-body input {
   width: 100%;
 }
-.charsheet .frontierscum .horsesheet-body .inner1 {
+.frontierscum .horsesheet .horsesheet-body .inner1 {
   padding: 2px;
 }
-.charsheet .frontierscum .horsesheet-body .inner1, .charsheet .frontierscum .horsesheet-body .inner2 {
+.frontierscum .horsesheet .horsesheet-body .inner1, .frontierscum .horsesheet .horsesheet-body .inner2 {
   border-bottom: 5px solid black;
   border-left: 5px solid black;
   border-right: 5px solid black;
   flex: 1;
 }
-.charsheet .frontierscum .horsesheet-body .name-block {
+.frontierscum .horsesheet .horsesheet-body .name-block {
   padding: 5px;
 }
-.charsheet .frontierscum .horsesheet-body .name-block .field-row {
+.frontierscum .horsesheet .horsesheet-body .name-block .field-row {
   display: flex;
   margin-bottom: 4px;
 }
-.charsheet .frontierscum .horsesheet-body .name-block .field-row label {
+.frontierscum .horsesheet .horsesheet-body .name-block .field-row label {
   font-family: "Smokum", cursive;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   margin-right: 4px;
 }
-.charsheet .frontierscum .horsesheet-body .name-block .field-row input {
+.frontierscum .horsesheet .horsesheet-body .name-block .field-row input {
   padding-left: 10px;
   text-align: left;
 }
-.charsheet .frontierscum .horsesheet-body .on-your-horse {
+.frontierscum .horsesheet .horsesheet-body .on-your-horse {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.charsheet .frontierscum .horsesheet-body .on-your-horse .on-horse-row {
+.frontierscum .horsesheet .horsesheet-body .on-your-horse .on-horse-row {
   flex: 0 0 20px;
   padding: 2px;
 }
-.charsheet .frontierscum .horsesheet-body .stolen-block {
+.frontierscum .horsesheet .horsesheet-body .stolen-block {
   display: flex;
   justify-content: center;
 }
-.charsheet .frontierscum .horsesheet-body .stolen-block .stats {
+.frontierscum .horsesheet .horsesheet-body .stolen-block .stats {
   width: 300px;
 }
-.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row {
+.frontierscum .horsesheet .horsesheet-body .stolen-block .stats .stat-row {
   display: flex;
   justify-content: center;
 }
-.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block {
+.frontierscum .horsesheet .horsesheet-body .stolen-block .stats .stat-row .stat-block {
   display: flex;
   align-items: center;
 }
-.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block label {
+.frontierscum .horsesheet .horsesheet-body .stolen-block .stats .stat-row .stat-block label {
   font-family: "Ultra", serif;
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-right: 8px;
   width: 120px;
   text-align: right;
 }
-.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe {
+.frontierscum .horsesheet .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe {
   background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horseshoe.png");
   background-size: 100% 100%;
   height: 50px;
@@ -559,28 +569,28 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   align-items: center;
   justify-content: center;
 }
-.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe input {
+.frontierscum .horsesheet .horsesheet-body .stolen-block .stats .stat-row .stat-block .horseshoe input {
   margin-right: 8px;
   width: 20px;
 }
-.charsheet .frontierscum .horsesheet-body .stolen-block .stats .stat-row .stat-block:last-child label {
+.frontierscum .horsesheet .horsesheet-body .stolen-block .stats .stat-row .stat-block:last-child label {
   width: 80px;
 }
-.charsheet .frontierscum .horsesheet-body .horse1 {
+.frontierscum .horsesheet .horsesheet-body .horse1 {
   background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead1.png");
   background-size: 100% 100%;
-  height: 190px;
-  width: 190px;
+  height: 170px;
+  width: 170px;
   position: absolute;
-  left: 62px;
-  top: 780px;
+  left: 10px;
+  top: 700px;
 }
-.charsheet .frontierscum .horsesheet-body .horse2 {
+.frontierscum .horsesheet .horsesheet-body .horse2 {
   background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead2.png");
   background-size: 100% 100%;
-  width: 190px;
-  height: 190px;
+  width: 170px;
+  height: 170px;
   position: absolute;
-  left: 540px;
-  top: 778px;
+  left: 498px;
+  top: 700px;
 }

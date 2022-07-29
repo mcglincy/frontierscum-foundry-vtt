@@ -3,46 +3,46 @@
     .inner2
       .name-block 
         .field-row.name-row 
-          label(data-i18n='name') name
-          input(type='text', name='attr_character_name', placeholder='Lightning Bolt')
+          label name
+          input(type='text', name='name', value='{{actor.name}}', placeholder='Lightning Bolt', spellcheck='false')
         .field-row
-          label(data-i18n='likes') likes
-          input(type='text', name='attr_horse_likes', placeholder='Daily baths')
-          label(data-i18n='type') type
-          input(type='text', name='attr_horse_type', placeholder='Brown riding horse')
+          label likes
+          input(type='text', name='data.likes', value='{{data.data.likes}}', placeholder='Daily baths', spellcheck='false')
+          label type
+          input(type='text', name='data.type', value='{{data.data.type}}', placeholder='Brown riding horse', spellcheck='false')
         .field-row
-          label(data-i18n='notes') notes
-          input(type='text', name='attr_horse_notes')
+          label notes
+          input(type='text', name='data.notes', value='{{data.data.notes}}', spellcheck='false')
         .field-row
-          label(data-i18n='vehicle') vehicle
-          input(type='text', name='attr_horse_vehicle')
+          label vehicle
+          input(type='text', name='data.vehicle', value='{{data.data.vehicle}}', spellcheck='false')
       .on-your-horse 
         .top-label(data-i18n='on_your_horse') on your horse
         each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
           .on-horse-row
-            input(type='text', name=`attr_on_horse_${val}`)
+            input(type='text', name=`data.slot${val}`, value=`{{data.data.slot${val}}}`, spellcheck='false')
       .stolen-block
         .stats
           .stat-row          
             .stat-block 
-              label(data-i18n='stolen') stolen
+              label stolen
               .horseshoe
                 label(class='check-container')
-                  input(type='checkbox' name='attr_horse_stolen')
+                  | <input type="checkbox" name="data.stolen" {{#if data.data.stolen}}checked{{/if}} />                
                   span(class='checkmark')
             .stat-block 
-              label(data-i18n='hp') hp
+              label hp
               .horseshoe
-                input(type='number', name='attr_hp', placeholder=0)
+                input(type='number', name='data.hp.value', value='{{data.data.hp.value}}', placeholder=0)
           .stat-row
             .stat-block 
-              label(data-i18n='morale') morale
+              label morale
               .horseshoe
-                input(type='number', name='attr_horse_morale', placeholder=0)
+                input(type='number', name='data.morale', value='{{data.data.morale}}', placeholder=0)
             .stat-block 
               label(data-i18n='max') max
               .horseshoe
-                input(type='number', name='attr_hp_max', placeholder=0)
+                input(type='number', name='data.hp.max', value='{{data.data.hp.max}}', placeholder=0)
       .horse1 
       .horse2
 

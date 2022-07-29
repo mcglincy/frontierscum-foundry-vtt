@@ -1,6 +1,5 @@
 
-<input type="hidden" name="attr_sheet_mode" value="scum"/>
-<div class="frontierscum">
+<form class="frontierscum">
   <div class="horsesheet">
     <div class="horsesheet-header">
       <div class="title">HORSE SHEET</div>
@@ -11,86 +10,84 @@
         <div class="inner2">
           <div class="name-block"> 
             <div class="field-row name-row"> 
-              <label data-i18n="name">name</label>
-              <input type="text" name="attr_character_name" placeholder="Lightning Bolt"/>
+              <label>name</label>
+              <input type="text" name="name" value="{{actor.name}}" placeholder="Lightning Bolt" spellcheck="false"/>
             </div>
             <div class="field-row">
-              <label data-i18n="likes">likes</label>
-              <input type="text" name="attr_horse_likes" placeholder="Daily baths"/>
-              <label data-i18n="type">type</label>
-              <input type="text" name="attr_horse_type" placeholder="Brown riding horse"/>
+              <label>likes</label>
+              <input type="text" name="data.likes" value="{{data.data.likes}}" placeholder="Daily baths" spellcheck="false"/>
+              <label>type</label>
+              <input type="text" name="data.type" value="{{data.data.type}}" placeholder="Brown riding horse" spellcheck="false"/>
             </div>
             <div class="field-row">
-              <label data-i18n="notes">notes</label>
-              <input type="text" name="attr_horse_notes"/>
+              <label>notes</label>
+              <input type="text" name="data.notes" value="{{data.data.notes}}" spellcheck="false"/>
             </div>
             <div class="field-row">
-              <label data-i18n="vehicle">vehicle</label>
-              <input type="text" name="attr_horse_vehicle"/>
+              <label>vehicle</label>
+              <input type="text" name="data.vehicle" value="{{data.data.vehicle}}" spellcheck="false"/>
             </div>
           </div>
           <div class="on-your-horse"> 
             <div class="top-label" data-i18n="on_your_horse">on your horse</div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_1"/>
+              <input type="text" name="data.slot1" value="{{data.data.slot1}}" spellcheck="false"/>
             </div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_2"/>
+              <input type="text" name="data.slot2" value="{{data.data.slot2}}" spellcheck="false"/>
             </div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_3"/>
+              <input type="text" name="data.slot3" value="{{data.data.slot3}}" spellcheck="false"/>
             </div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_4"/>
+              <input type="text" name="data.slot4" value="{{data.data.slot4}}" spellcheck="false"/>
             </div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_5"/>
+              <input type="text" name="data.slot5" value="{{data.data.slot5}}" spellcheck="false"/>
             </div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_6"/>
+              <input type="text" name="data.slot6" value="{{data.data.slot6}}" spellcheck="false"/>
             </div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_7"/>
+              <input type="text" name="data.slot7" value="{{data.data.slot7}}" spellcheck="false"/>
             </div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_8"/>
+              <input type="text" name="data.slot8" value="{{data.data.slot8}}" spellcheck="false"/>
             </div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_9"/>
+              <input type="text" name="data.slot9" value="{{data.data.slot9}}" spellcheck="false"/>
             </div>
             <div class="on-horse-row">
-              <input type="text" name="attr_on_horse_10"/>
+              <input type="text" name="data.slot10" value="{{data.data.slot10}}" spellcheck="false"/>
             </div>
           </div>
           <div class="stolen-block">
             <div class="stats">
               <div class="stat-row">         
                 <div class="stat-block"> 
-                  <label data-i18n="stolen">stolen</label>
+                  <label>stolen</label>
                   <div class="horseshoe">
-                    <label class="check-container">
-                      <input type="checkbox" name="attr_horse_stolen"/><span class="checkmark"></span>
-                    </label>
+                    <label class="check-container"><input type="checkbox" name="data.stolen" {{#if data.data.stolen}}checked{{/if}} />                <span class="checkmark"></span></label>
                   </div>
                 </div>
                 <div class="stat-block"> 
-                  <label data-i18n="hp">hp</label>
+                  <label>hp</label>
                   <div class="horseshoe">
-                    <input type="number" name="attr_hp" placeholder="0"/>
+                    <input type="number" name="data.hp.value" value="{{data.data.hp.value}}" placeholder="0"/>
                   </div>
                 </div>
               </div>
               <div class="stat-row">
                 <div class="stat-block"> 
-                  <label data-i18n="morale">morale</label>
+                  <label>morale</label>
                   <div class="horseshoe">
-                    <input type="number" name="attr_horse_morale" placeholder="0"/>
+                    <input type="number" name="data.morale" value="{{data.data.morale}}" placeholder="0"/>
                   </div>
                 </div>
                 <div class="stat-block"> 
                   <label data-i18n="max">max</label>
                   <div class="horseshoe">
-                    <input type="number" name="attr_hp_max" placeholder="0"/>
+                    <input type="number" name="data.hp.max" value="{{data.data.hp.max}}" placeholder="0"/>
                   </div>
                 </div>
               </div>
@@ -102,4 +99,4 @@
       </div>
     </div>
   </div>
-</div>
+</form>

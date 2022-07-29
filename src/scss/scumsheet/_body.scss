@@ -43,7 +43,7 @@
     margin-bottom: 10px;
     .ability-col {
       display: flex;
-      flex: 0 0 90px;
+      flex: 0 0 80px;
       flex-direction: column;
       .ability {
         align-items: center;
@@ -58,6 +58,7 @@
           background-color: black;
           color: white;
           flex: 0 0 30px;
+          padding-top: 2px;
           width: 100%;
         }
         .value {
@@ -121,17 +122,23 @@
           input {
             font-size: 0.8rem;
             height: 1.0rem;
-            width: 70px;
           }
         }
         .checkmark {
-          // top: 5px;
           left: 5px;
         }        
-      }        
-      .drunk {
+      }
+      .condition-row.miserable {
+        input {
+          width: 110px;
+        }        
+      }
+      .condition-row.drunk {
         border-top: $border;
         flex: 0 0 42px;
+        input {
+          width: 70px;
+        }        
       }
       .condition-row.notes {
         border-top: $border;
@@ -245,9 +252,6 @@
         border-left: none;
         border-right: none;
         flex: 1;
-        input[type='text'] {
-          //font-size: 5px;
-        }
       }          
     }      
   }

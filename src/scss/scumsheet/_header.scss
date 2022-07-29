@@ -2,9 +2,6 @@
   .window-content {
     background: none;
     background-color: white;
-    .scumsheet {
-      // margin: 10px;
-    }
   }
 }
 .frontierscum .scumsheet .scumsheet-header {
@@ -16,15 +13,15 @@
     border-bottom: 4px solid black;
     border-top: 4px solid black;
     font-family: $logo-font;
-    font-size: 2.8rem;
-    line-height: 2.4rem;
+    font-size: 2.5rem;
+    line-height: 2.2rem;
     padding-top: 2px;
     margin-bottom: 5px;
   }
   .wanted {
     font-family: $slab-font;
-    font-size: 7.8rem;
-    line-height: 5.8rem;
+    font-size: 7.0rem;
+    line-height: 5.5rem;
   }
   .dead-or-alive {
     font-family: $cursive-font;
