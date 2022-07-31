@@ -57,6 +57,7 @@
       "templates": ["common"],
       "attack": "",
       "morale": 7,
+      "protection": "",
       "special": ""
     },
     "horse": {

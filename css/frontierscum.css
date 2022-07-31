@@ -594,3 +594,93 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   left: 498px;
   top: 700px;
 }
+
+.frontierscum .npcsheet {
+  display: flex;
+  flex-direction: column;
+}
+.frontierscum .npcsheet .fields {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.frontierscum .npcsheet .fields label {
+  font-family: "Smokum", cursive;
+  font-size: 1.7rem;
+  margin-right: 4px;
+}
+.frontierscum .npcsheet .fields input {
+  flex: 1;
+}
+.frontierscum .npcsheet .fields textarea {
+  height: 100px;
+  padding: 4px;
+  width: 100%;
+}
+.frontierscum .npcsheet .fields .field-row {
+  display: flex;
+  width: 100%;
+}
+.frontierscum .npcsheet .npcsheet-header {
+  display: flex;
+  flex: 0 0 234px;
+  margin-bottom: 10px;
+}
+.frontierscum .npcsheet .npcsheet-header .portrait {
+  align-items: center;
+  border: 2px solid black;
+  display: flex;
+  flex: 0 0 232px;
+  flex-direction: column;
+  justify-content: center;
+}
+.frontierscum .npcsheet .npcsheet-header .portrait .portrait-inner {
+  height: 222px;
+  width: 222px;
+}
+.frontierscum .npcsheet .npcsheet-header .portrait .portrait-inner img {
+  border: 2px solid black;
+  height: 222px;
+  width: 222px;
+}
+.frontierscum .npcsheet .npcsheet-header .fields-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.frontierscum .npcsheet .npcsheet-header .fields-col .hp-block {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.frontierscum .npcsheet .npcsheet-header .fields-col .hp-block .stat-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.frontierscum .npcsheet .npcsheet-header .fields-col .hp-block .stat-block input {
+  width: 100px;
+}
+.frontierscum .npcsheet .npcsheet-header .fields-col .hp-block .stat-block .name span {
+  font-family: "Ultra", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.frontierscum .npcsheet .npcsheet-header .fields-col .hp-block .stat-block .value input {
+  font-size: 1.5rem;
+  width: 2.8rem;
+}
+.frontierscum .npcsheet .npcsheet-header .fields-col .button-row {
+  display: flex;
+}
+.frontierscum .npcsheet .npcsheet-header .fields-col .button-row button {
+  background-color: black;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-family: "Ultra", serif;
+  text-transform: uppercase;
+}

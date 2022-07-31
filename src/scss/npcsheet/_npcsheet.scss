@@ -1,0 +1,104 @@
+.frontierscum .npcsheet {
+  display: flex;
+  flex-direction: column;
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    label {
+      font-family: $label-font;
+      font-size: 1.7rem;
+      margin-right: 4px;
+    }
+    input {
+      flex: 1;
+    }
+    textarea {
+      height: 100px;
+      padding: 4px;
+      width: 100%;
+    }    
+    .field-row {
+      display: flex;
+      width: 100%;
+    }
+  }    
+
+  .npcsheet-header {
+    display: flex;
+    flex: 0 0 234px;
+    margin-bottom: 10px;
+    .portrait {
+      align-items: center;
+      border: 2px solid black;
+      display: flex;
+      flex: 0 0 232px;
+      flex-direction: column;
+      justify-content: center;
+      .portrait-inner {
+        height: 222px;
+        width: 222px;        
+        img {
+          border: 2px solid black;
+          height: 222px;
+          width: 222px;        
+        }
+      }
+    }
+    .fields-col {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+      .hp-block {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        .stat-block {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          input {
+            width: 100px;
+          }
+          .name span {
+              font-family: $slab-font;
+              font-size: 1.5rem;
+              text-transform: uppercase;
+          }
+          .value {
+            input {
+              font-size: 1.5rem;
+              width: 2.8rem;
+            }
+          }
+        }
+      }
+      .button-row {
+        display: flex;
+        button {
+          background-color: black;
+          border: none;
+          border-radius: 0;
+          color: white;
+          font-family: $slab-font;
+          text-transform: uppercase;
+        }
+      }  
+  
+    }
+  }
+  .npcsheet-body {
+    .fields {
+      .field-row {
+        label {
+          // flex: 0 0 150px;
+          // text-align: right;
+        }  
+      }
+    }
+  }
+}

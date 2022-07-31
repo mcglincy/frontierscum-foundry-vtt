@@ -5,7 +5,7 @@
  import { FSActor } from "./actor/actor.js";
  import { FSCharacterSheet } from "./actor/sheet/character-sheet.js";
  import { FSHorseSheet } from "./actor/sheet/horse-sheet.js";
-//  import { FSNpcSheet } from "./actor/sheet/npc-sheet.js";
+ import { FSNpcSheet } from "./actor/sheet/npc-sheet.js";
  import { FS } from "./config.js";
  import { FSItem } from "./item/item.js";
 //  import { FSItemSheet } from "./item/sheet/item-sheet.js";
@@ -36,11 +36,11 @@ import { configureHandlebars } from "./handlebars.js";
      makeDefault: true,
      label: "FS.SheetClassHorse",
    });
-  //  Actors.registerSheet("frontierscum", FSNpcSheet, {
-  //    types: ["npc"],
-  //    makeDefault: true,
-  //    label: "FS.SheetClassNpc",
-  //  });
+   Actors.registerSheet("frontierscum", FSNpcSheet, {
+     types: ["npc"],
+     makeDefault: true,
+     label: "FS.SheetClassNpc",
+   });
   //  Items.unregisterSheet("core", ItemSheet);
   //  Items.registerSheet("frontierscum", FSItemSheet, { makeDefault: true });
  

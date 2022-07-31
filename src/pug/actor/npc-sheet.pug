@@ -1,0 +1,42 @@
+form.frontierscum
+  .npcsheet
+
+    .npcsheet-header
+      .portrait 
+        .portrait-inner 
+          img(src='{{actor.img}}', title='{{actor.name}}', data-edit="img")
+      .fields-col
+        .fields 
+          .field-row 
+            label name
+            input(type='text', name='name', value="{{actor.name}}", placeholder='', spellcheck='false')
+          .field-row 
+            textarea(name='data.notes') {{data.data.notes}}
+        .hp-block 
+          .stat-block.hp 
+            .name 
+              span hp
+            .value 
+              input(type='number', name='data.hp.value', value='{{data.data.hp.value}}', placeholder=0)
+          .stat-block.max-hp 
+            .name 
+              span max hp
+            .value 
+              input(type='number', name='data.hp.max', value='{{data.data.hp.max}}', placeholder=0)
+        .button-row 
+          button(name='reaction') reaction 
+          button(name='morale') morale
+
+    .npcsheet-body 
+      .fields 
+        .field-row 
+          label morale 
+          input(type='number', name='data.morale', value='{{data.data.morale}}')
+        .field-row 
+          label attack 
+          input(type='text', name='data.attack', value='{{data.data.attack}}', spellcheck='false')
+        .field-row 
+          label protection 
+          input(type='text', name='data.protection', value='{{data.data.protection}}', spellcheck='false')
+        .field-row 
+          textarea(name='data.special') {{data.data.special}}
