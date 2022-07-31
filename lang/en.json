@@ -1,4 +1,12 @@
 {
+  "FS.MoraleFleesOrSurrenders": "flees or surrenders",
+  "FS.MoraleStandsStrong": "stands strong",
+  "FS.Reaction": "reaction",
+  "FS.ReactionApathetic": "apathetic",
+  "FS.ReactionIrritated": "irritated",
+  "FS.ReactionKillOrCapture": "kill or capture",
+  "FS.ReactionSeeminglyFriendly": "somewhat friendly",
+  "FS.ReactionSomewhatAmicable": "somewhat amicable",
   "FS.SheetClassCharacter": "Frontier Scum Character Sheet",
   "FS.SheetClassHorse": "Frontier Scum Horse Sheet",
   "FS.SheetClassNpc": "Frontier Scum NPC Sheet"

@@ -25,6 +25,17 @@ export class FSNpcSheet extends FSActorSheet {
   /** @override */
   activateListeners(html) {
     super.activateListeners(html);
+    html.find(".reaction-button").click(this._onReactionClick.bind(this));
+    html.find(".morale-button").click(this._onMoraleClick.bind(this));
   }  
 
+  _onReactionClick(event) {
+    event.preventDefault();
+    this.actor.rollReaction();
+  }
+
+  _onMoraleClick(event) {
+    event.preventDefault();
+    this.actor.rollMorale();
+  }
 }

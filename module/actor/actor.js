@@ -39,7 +39,6 @@ export class FSActor extends Actor {
     console.log(this);
     const value = this.data.data.abilities[ability];
     const formula = d20Formula(value);
-    console.log(formula);
     const roll = new Roll(formula);
     const flavor = `Check ${ability.toUpperCase()}`;
     await roll.toMessage({
@@ -48,27 +47,43 @@ export class FSActor extends Actor {
     });      
   }
 
-  // rollMorale() {
-  //   const moraleRoll = new Roll("2d6");
-  //   moraleRoll.evaluate({ async: false });
-  //   let key = "";
-  //   if (moraleRoll.total > actor.data.data.morale) {
-  //     const resultRoll = new Roll("1d6");
-  //     resultRoll.evaluate({ async: false });
-  //     if (resultRoll.total <= 3) {
-  //       key = "CY.MoraleFlees";
-  //     } else {
-  //       key = "CY.MoraleSurrenders";
-  //     }
-  //   } else {
-  //     key = "CY.MoraleStandsStrong";
-  //   }
-  //   const moraleText = `${actor.name} ${game.i18n.localize(key)}.`;
-  //   await moraleRoll.toMessage({
-  //     flavor: moraleText,
-  //     speaker: ChatMessage.getSpeaker({ actor }),
-  //   });  
-  // }
+  async rollMorale() {
+    const roll = new Roll("2d6");
+    roll.evaluate({ async: false });
+    let key = "";
+    if (roll.total > this.data.data.morale) {
+      key = "FS.MoraleFleesOrSurrenders";
+    } else {
+      key = "FS.MoraleStandsStrong";
+    }
+    const flavor = `${this.name} ${game.i18n.localize(key)}!`;
+    await roll.toMessage({
+      flavor,
+      speaker: ChatMessage.getSpeaker({ actor: this }),
+    });  
+  }
+
+  async rollReaction() {
+    const roll = new Roll("2d6");
+    roll.evaluate({ async: false });
+    let key = "";
+    if (roll.total <= 3) {
+      key = "FS.ReactionKillOrCapture";
+    } else if (roll.total <= 6) {
+      key = "FS.ReactionIrritated";
+    } else if (roll.total <= 8) {
+      key = "FS.ReactionApathetic";
+    } else if (roll.total <= 10) {
+      key = "FS.ReactionSomewhatAmicable";
+    } else {
+      key = "FS.ReactionSeeminglyFriendly";
+    }
+    const flavor = `${this.name} ${game.i18n.localize("FS.Reaction")}: ${game.i18n.localize(key)}.`;
+    await roll.toMessage({
+      flavor,
+      speaker: ChatMessage.getSpeaker({ actor: this }),
+    });  
+  }
 
 }
 
