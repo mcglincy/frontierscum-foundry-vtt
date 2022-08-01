@@ -1,3 +1,7 @@
+# 0.2.1
+
+- Tweak npc sheet.
+
 # 0.2.0
 
 - Add npc sheet.
