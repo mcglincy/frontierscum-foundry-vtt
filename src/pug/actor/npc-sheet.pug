@@ -23,15 +23,21 @@ form.frontierscum
               span max hp
             .value 
               input(type='number', name='data.hp.max', value='{{data.data.hp.max}}', placeholder=0)
+          .stat-block.max-hp 
+            .name 
+              span morale
+            .value 
+              input(type='number', name='data.morale', value='{{data.data.morale}}')
         .button-row 
-          button(name='reaction' class='reaction-button') reaction 
-          button(name='morale' class='morale-button') morale
+            button(name='reaction' class='reaction-button') 
+              i(class="fas fa-dice-six")
+              | &nbsp; reaction 
+            button(name='morale' class='morale-button')
+              i(class="fas fa-dice-six")
+              | &nbsp; morale
 
     .npcsheet-body 
       .fields 
-        .field-row 
-          label morale 
-          input(type='number', name='data.morale', value='{{data.data.morale}}')
         .field-row 
           label attack 
           input(type='text', name='data.attack', value='{{data.data.attack}}', spellcheck='false')

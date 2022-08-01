@@ -10,7 +10,7 @@ export class FSNpcSheet extends FSActorSheet {
       classes: ["frontierscum", "sheet", "actor", "npc"],
       template: "systems/frontierscum/templates/actor/npc-sheet.html",
       width: 705,
-      height: 500,
+      height: 477,
       tabs: [
         {
           navSelector: ".sheet-tabs",

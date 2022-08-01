@@ -28,19 +28,21 @@
               <input type="number" name="data.hp.max" value="{{data.data.hp.max}}" placeholder="0"/>
             </div>
           </div>
+          <div class="stat-block max-hp"> 
+            <div class="name"> <span>morale</span></div>
+            <div class="value"> 
+              <input type="number" name="data.morale" value="{{data.data.morale}}"/>
+            </div>
+          </div>
         </div>
         <div class="button-row"> 
-          <button class="reaction-button" name="reaction">reaction </button>
-          <button class="morale-button" name="morale">morale</button>
+          <button class="reaction-button" name="reaction"> <i class="fas fa-dice-six"></i>&nbsp; reaction </button>
+          <button class="morale-button" name="morale"><i class="fas fa-dice-six"></i>&nbsp; morale</button>
         </div>
       </div>
     </div>
     <div class="npcsheet-body"> 
       <div class="fields"> 
-        <div class="field-row"> 
-          <label>morale </label>
-          <input type="number" name="data.morale" value="{{data.data.morale}}"/>
-        </div>
         <div class="field-row"> 
           <label>attack </label>
           <input type="text" name="data.attack" value="{{data.data.attack}}" spellcheck="false"/>

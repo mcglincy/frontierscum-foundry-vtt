@@ -599,6 +599,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .npcsheet {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 }
 .frontierscum .npcsheet .fields {
   display: flex;
@@ -667,7 +668,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 }
 .frontierscum .npcsheet .npcsheet-header .fields-col .hp-block .stat-block .name span {
   font-family: "Ultra", serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
 .frontierscum .npcsheet .npcsheet-header .fields-col .hp-block .stat-block .value input {

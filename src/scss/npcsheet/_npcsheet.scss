@@ -1,6 +1,7 @@
 .frontierscum .npcsheet {
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
 
   .fields {
     display: flex;
@@ -66,7 +67,7 @@
           }
           .name span {
               font-family: $slab-font;
-              font-size: 1.5rem;
+              font-size: 1.3rem;
               text-transform: uppercase;
           }
           .value {
