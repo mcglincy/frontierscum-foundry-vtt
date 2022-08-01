@@ -683,6 +683,7 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   border: none;
   border-radius: 0;
   color: white;
+  cursor: pointer;
   font-family: "Ultra", serif;
   text-transform: uppercase;
 }
