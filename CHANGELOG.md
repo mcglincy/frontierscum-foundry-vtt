@@ -1,3 +1,7 @@
+# 0.2.2
+
+- Reduce input font-size a bit.
+
 # 0.2.1
 
 - Tweak npc sheet.
