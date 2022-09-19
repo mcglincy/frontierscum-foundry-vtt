@@ -6,13 +6,13 @@
         input(type='text', name='name', value="{{actor.name}}", placeholder='Kid Pomade', spellcheck='false')
       .field-row
         label a
-        input(type='text', name='data.background', value="{{data.data.background}}", placeholder='Drifter', spellcheck='false')
+        input(type='text', name='system.background', value="{{data.system.background}}", placeholder='Drifter', spellcheck='false')
       .field-row
         label wanted for
-        input(type='text', name='data.wantedFor', value="{{data.data.wantedFor}}", placeholder='Repeated fraud', spellcheck='false')
+        input(type='text', name='system.wantedFor', value="{{data.system.wantedFor}}", placeholder='Repeated fraud', spellcheck='false')
     .rewards
       label(data-i18n='rewards') rewards
-      textarea(name='data.rewards') {{data.data.rewards}}
+      textarea(name='system.rewards') {{data.system.rewards}}
   .abilities-block
     .ability-col
       each abil in ['grit', 'slick', 'wits', 'luck']
@@ -20,7 +20,7 @@
           .top-label.name 
             span(class='rollable ability-name' data-ability=`${abil}`)=abil
           .value
-            input(type='number', name=`data.abilities.${abil}`, value=`{{data.data.abilities.${abil}}}`, placeholder=0)
+            input(type='number', name=`system.abilities.${abil}`, value=`{{data.system.abilities.${abil}}}`, placeholder=0)
     .portrait-col
       img(src='{{actor.img}}', title='{{actor.name}}', data-edit="img")
     .condition-col
@@ -28,50 +28,50 @@
       .condition-row.miserable
         .checkbox
           label(class='check-container')
-            | <input type="checkbox" name="data.miserable" {{#if data.data.miserable}}checked{{/if}} />
+            | <input type="checkbox" name="system.miserable" {{#if data.system.miserable}}checked{{/if}} />
             span(class='checkmark')        
         .non-checkbox
           span(data-i18n='miserable') Miserable
           | &nbsp;(
-          input(type='text', name='data.misery', value='{{data.data.misery}}', spellcheck='false')
+          input(type='text', name='system.misery', value='{{data.system.misery}}', spellcheck='false')
           | &nbsp;). 
           span You don't recover HP from rest
           | .
       .condition-row.drunk 
         .checkbox
           label(class='check-container')
-            | <input type="checkbox" name="data.drunk" {{#if data.data.drunk}}checked{{/if}} />
+            | <input type="checkbox" name="system.drunk" {{#if data.system.drunk}}checked{{/if}} />
             span(class='checkmark')           
         .non-checkbox
           span Drunk
           | .
           span Swap your
-          input(type='text', name='data.drunkAbility1', value='{{data.data.drunkAbility1}}', spellcheck='false')
+          input(type='text', name='system.drunkAbility1', value='{{data.system.drunkAbility1}}', spellcheck='false')
           | &nbsp;
           span and
-          input(type='text', name='data.drunkAbility2', value='{{data.data.drunkAbility2}}', spellcheck='false')
+          input(type='text', name='system.drunkAbility2', value='{{data.system.drunkAbility2}}', spellcheck='false')
           | &nbsp;until sober.
       .condition-row.notes
-        textarea(name='data.condition1', placeholder="Notes and such", spellcheck='false') {{data.data.condition1}}
+        textarea(name='system.condition1', placeholder="Notes and such", spellcheck='false') {{data.system.condition1}}
       .condition-row.notes
-        textarea(name='data.condition2', placeholder="More of 'em", spellcheck='false') {{data.data.condition2}}
+        textarea(name='system.condition2', placeholder="More of 'em", spellcheck='false') {{data.system.condition2}}
 
   .hp-block 
     .stat-block.hp 
       .name 
         span hp
       .value 
-        input(type='number', name='data.hp.value', value='{{data.data.hp.value}}',placeholder=0)
+        input(type='number', name='system.hp.value', value='{{data.system.hp.value}}',placeholder=0)
     .stat-block.max-hp 
       .name 
         span max hp
       .value 
-        input(type='number', name='data.hp.max', value='{{data.data.hp.max}}',placeholder=0)
+        input(type='number', name='system.hp.max', value='{{data.system.hp.max}}',placeholder=0)
     .stat-block.aces 
       .name 
         span aces
       .value 
-        input(type='number', name='data.aces', value='{{data.data.aces}}',placeholder=0)
+        input(type='number', name='system.aces', value='{{data.system.aces}}',placeholder=0)
 
   .equipment-block
     .eq-col-1
@@ -79,30 +79,30 @@
         .top-label
           span on your head
         .eq-row
-          input(type='text', name='data.headSlot', value='{{data.data.headSlot}}')
+          input(type='text', name='system.headSlot', value='{{data.system.headSlot}}')
       .eq-section.skills
         .skills-label
           span skills
         each rownum in [1,2,3,4,5,6]
           .eq-row
-            input(type='text', name=`data.skill${rownum}`, value=`{{data.data.skill${rownum}}}`)
+            input(type='text', name=`system.skill${rownum}`, value=`{{data.system.skill${rownum}}}`)
     .eq-col-2
       .eq-section.on-your-belt
         .top-label
           span on your belt
         each rownum in [1,2,3]
           .eq-row
-            input(type='text', name=`data.beltSlot${rownum}`, value=`{{data.data.beltSlot${rownum}}}`)
+            input(type='text', name=`system.beltSlot${rownum}`, value=`{{data.system.beltSlot${rownum}}}`)
       .eq-section.on-your-back
         .top-label
           span on your back
         each rownum in [1,2,3]
           .eq-row
-            input(type='text', name=`data.backSlot${rownum}`, value=`{{data.data.backSlot${rownum}}}`)
+            input(type='text', name=`system.backSlot${rownum}`, value=`{{data.system.backSlot${rownum}}}`)
     .eq-col-3 
       .eq-section.in-your-pockets
         .top-label
           span in your pockets
         each rownum in [1,2,3,4,5,6,7,8,9,10]
           .eq-row
-            input(type='text', name=`data.pocketSlot${rownum}`, value=`{{data.data.pocketSlot${rownum}}}`)
+            input(type='text', name=`system.pocketSlot${rownum}`, value=`{{data.system.pocketSlot${rownum}}}`)

@@ -36,8 +36,7 @@ export class FSActor extends Actor {
   }
 
   async abilityCheck(ability) {
-    console.log(this);
-    const value = this.data.data.abilities[ability];
+    const value = this.system.abilities[ability];
     const formula = d20Formula(value);
     const roll = new Roll(formula);
     const flavor = `Check ${ability.toUpperCase()}`;

@@ -12,26 +12,26 @@
             <input type="text" name="name" value="{{actor.name}}" placeholder="" spellcheck="false"/>
           </div>
           <div class="field-row"> 
-            <textarea name="data.notes">{{data.data.notes}}</textarea>
+            <textarea name="system.notes">{{data.system.notes}}</textarea>
           </div>
         </div>
         <div class="hp-block"> 
           <div class="stat-block hp"> 
             <div class="name"> <span>hp</span></div>
             <div class="value"> 
-              <input type="number" name="data.hp.value" value="{{data.data.hp.value}}" placeholder="0"/>
+              <input type="number" name="system.hp.value" value="{{data.system.hp.value}}" placeholder="0"/>
             </div>
           </div>
           <div class="stat-block max-hp"> 
             <div class="name"> <span>max hp</span></div>
             <div class="value"> 
-              <input type="number" name="data.hp.max" value="{{data.data.hp.max}}" placeholder="0"/>
+              <input type="number" name="system.hp.max" value="{{data.system.hp.max}}" placeholder="0"/>
             </div>
           </div>
           <div class="stat-block max-hp"> 
             <div class="name"> <span>morale</span></div>
             <div class="value"> 
-              <input type="number" name="data.morale" value="{{data.data.morale}}"/>
+              <input type="number" name="system.morale" value="{{data.system.morale}}"/>
             </div>
           </div>
         </div>
@@ -45,14 +45,14 @@
       <div class="fields"> 
         <div class="field-row"> 
           <label>attack </label>
-          <input type="text" name="data.attack" value="{{data.data.attack}}" spellcheck="false"/>
+          <input type="text" name="system.attack" value="{{data.system.attack}}" spellcheck="false"/>
         </div>
         <div class="field-row"> 
           <label>protection </label>
-          <input type="text" name="data.protection" value="{{data.data.protection}}" spellcheck="false"/>
+          <input type="text" name="system.protection" value="{{data.system.protection}}" spellcheck="false"/>
         </div>
         <div class="field-row"> 
-          <textarea name="data.special">{{data.data.special}}</textarea>
+          <textarea name="system.special">{{data.system.special}}</textarea>
         </div>
       </div>
     </div>

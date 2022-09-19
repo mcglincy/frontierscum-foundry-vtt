@@ -1,3 +1,7 @@
+# 1.0.0
+
+- Foundry v10 compatibility.
+
 # 0.2.2
 
 - Reduce input font-size a bit.

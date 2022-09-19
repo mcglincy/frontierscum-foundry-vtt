@@ -5,9 +5,9 @@
       <div class="fs-logo">FRONTIER SCUM</div>
       <div class="wanted">WANTED</div>
       <div class="dead-or-alive">
-        <label class="check-container"><input type="radio" name="data.wanted" value="deadOrAlive" {{#ifEq data.data.wanted 'deadOrAlive'}}checked{{/ifEq}} />   <span class="checkmark">  </span>&nbsp;<span>dead or alive</span>&nbsp;</label>/ 
-        <label class="check-container"><input type="radio" name="data.wanted" value="dead" {{#ifEq data.data.wanted 'dead'}}checked{{/ifEq}} />   <span class="checkmark">  </span>&nbsp;<span>dead</span>&nbsp;</label>/
-        <label class="check-container"><input type="radio" name="data.wanted" value="alive" {{#ifEq data.data.wanted 'alive'}}checked{{/ifEq}} />   <span class="checkmark">  </span>&nbsp;<span>alive</span>&nbsp;</label>
+        <label class="check-container"><input type="radio" name="system.wanted" value="deadOrAlive" {{#ifEq data.system.wanted 'deadOrAlive'}}checked{{/ifEq}} />   <span class="checkmark">  </span>&nbsp;<span>dead or alive</span>&nbsp;</label>/ 
+        <label class="check-container"><input type="radio" name="system.wanted" value="dead" {{#ifEq data.system.wanted 'dead'}}checked{{/ifEq}} />   <span class="checkmark">  </span>&nbsp;<span>dead</span>&nbsp;</label>/
+        <label class="check-container"><input type="radio" name="system.wanted" value="alive" {{#ifEq data.system.wanted 'alive'}}checked{{/ifEq}} />   <span class="checkmark">  </span>&nbsp;<span>alive</span>&nbsp;</label>
       </div>
     </div>
     <div class="scumsheet-body">
@@ -19,16 +19,16 @@
           </div>
           <div class="field-row">
             <label>a</label>
-            <input type="text" name="data.background" value="{{data.data.background}}" placeholder="Drifter" spellcheck="false"/>
+            <input type="text" name="system.background" value="{{data.system.background}}" placeholder="Drifter" spellcheck="false"/>
           </div>
           <div class="field-row">
             <label>wanted for</label>
-            <input type="text" name="data.wantedFor" value="{{data.data.wantedFor}}" placeholder="Repeated fraud" spellcheck="false"/>
+            <input type="text" name="system.wantedFor" value="{{data.system.wantedFor}}" placeholder="Repeated fraud" spellcheck="false"/>
           </div>
         </div>
         <div class="rewards">
           <label data-i18n="rewards">rewards</label>
-          <textarea name="data.rewards">{{data.data.rewards}}</textarea>
+          <textarea name="system.rewards">{{data.system.rewards}}</textarea>
         </div>
       </div>
       <div class="abilities-block">
@@ -36,25 +36,25 @@
           <div class="ability">
             <div class="top-label name"> <span class="rollable ability-name" data-ability="grit">grit</span></div>
             <div class="value">
-              <input type="number" name="data.abilities.grit" value="{{data.data.abilities.grit}}" placeholder="0"/>
+              <input type="number" name="system.abilities.grit" value="{{data.system.abilities.grit}}" placeholder="0"/>
             </div>
           </div>
           <div class="ability">
             <div class="top-label name"> <span class="rollable ability-name" data-ability="slick">slick</span></div>
             <div class="value">
-              <input type="number" name="data.abilities.slick" value="{{data.data.abilities.slick}}" placeholder="0"/>
+              <input type="number" name="system.abilities.slick" value="{{data.system.abilities.slick}}" placeholder="0"/>
             </div>
           </div>
           <div class="ability">
             <div class="top-label name"> <span class="rollable ability-name" data-ability="wits">wits</span></div>
             <div class="value">
-              <input type="number" name="data.abilities.wits" value="{{data.data.abilities.wits}}" placeholder="0"/>
+              <input type="number" name="system.abilities.wits" value="{{data.system.abilities.wits}}" placeholder="0"/>
             </div>
           </div>
           <div class="ability">
             <div class="top-label name"> <span class="rollable ability-name" data-ability="luck">luck</span></div>
             <div class="value">
-              <input type="number" name="data.abilities.luck" value="{{data.data.abilities.luck}}" placeholder="0"/>
+              <input type="number" name="system.abilities.luck" value="{{data.system.abilities.luck}}" placeholder="0"/>
             </div>
           </div>
         </div>
@@ -63,26 +63,26 @@
           <div class="top-label conditions-and-notes">Conditions & Notes</div>
           <div class="condition-row miserable">
             <div class="checkbox">
-              <label class="check-container"><input type="checkbox" name="data.miserable" {{#if data.data.miserable}}checked{{/if}} /><span class="checkmark">       </span></label>
+              <label class="check-container"><input type="checkbox" name="system.miserable" {{#if data.system.miserable}}checked{{/if}} /><span class="checkmark">       </span></label>
             </div>
             <div class="non-checkbox"><span data-i18n="miserable">Miserable</span>&nbsp;(
-              <input type="text" name="data.misery" value="{{data.data.misery}}" spellcheck="false"/>&nbsp;). <span>You don't recover HP from rest</span>.
+              <input type="text" name="system.misery" value="{{data.system.misery}}" spellcheck="false"/>&nbsp;). <span>You don't recover HP from rest</span>.
             </div>
           </div>
           <div class="condition-row drunk"> 
             <div class="checkbox">
-              <label class="check-container"><input type="checkbox" name="data.drunk" {{#if data.data.drunk}}checked{{/if}} /><span class="checkmark">          </span></label>
+              <label class="check-container"><input type="checkbox" name="system.drunk" {{#if data.system.drunk}}checked{{/if}} /><span class="checkmark">          </span></label>
             </div>
             <div class="non-checkbox"><span>Drunk</span>.<span>Swap your</span>
-              <input type="text" name="data.drunkAbility1" value="{{data.data.drunkAbility1}}" spellcheck="false"/>&nbsp;<span>and</span>
-              <input type="text" name="data.drunkAbility2" value="{{data.data.drunkAbility2}}" spellcheck="false"/>&nbsp;until sober.
+              <input type="text" name="system.drunkAbility1" value="{{data.system.drunkAbility1}}" spellcheck="false"/>&nbsp;<span>and</span>
+              <input type="text" name="system.drunkAbility2" value="{{data.system.drunkAbility2}}" spellcheck="false"/>&nbsp;until sober.
             </div>
           </div>
           <div class="condition-row notes">
-            <textarea name="data.condition1" placeholder="Notes and such" spellcheck="false">{{data.data.condition1}}</textarea>
+            <textarea name="system.condition1" placeholder="Notes and such" spellcheck="false">{{data.system.condition1}}</textarea>
           </div>
           <div class="condition-row notes">
-            <textarea name="data.condition2" placeholder="More of 'em" spellcheck="false">{{data.data.condition2}}</textarea>
+            <textarea name="system.condition2" placeholder="More of 'em" spellcheck="false">{{data.system.condition2}}</textarea>
           </div>
         </div>
       </div>
@@ -90,19 +90,19 @@
         <div class="stat-block hp"> 
           <div class="name"> <span>hp</span></div>
           <div class="value"> 
-            <input type="number" name="data.hp.value" value="{{data.data.hp.value}}" placeholder="0"/>
+            <input type="number" name="system.hp.value" value="{{data.system.hp.value}}" placeholder="0"/>
           </div>
         </div>
         <div class="stat-block max-hp"> 
           <div class="name"> <span>max hp</span></div>
           <div class="value"> 
-            <input type="number" name="data.hp.max" value="{{data.data.hp.max}}" placeholder="0"/>
+            <input type="number" name="system.hp.max" value="{{data.system.hp.max}}" placeholder="0"/>
           </div>
         </div>
         <div class="stat-block aces"> 
           <div class="name"> <span>aces</span></div>
           <div class="value"> 
-            <input type="number" name="data.aces" value="{{data.data.aces}}" placeholder="0"/>
+            <input type="number" name="system.aces" value="{{data.system.aces}}" placeholder="0"/>
           </div>
         </div>
       </div>
@@ -111,28 +111,28 @@
           <div class="eq-section on-your-head">
             <div class="top-label"><span>on your head</span></div>
             <div class="eq-row">
-              <input type="text" name="data.headSlot" value="{{data.data.headSlot}}"/>
+              <input type="text" name="system.headSlot" value="{{data.system.headSlot}}"/>
             </div>
           </div>
           <div class="eq-section skills">
             <div class="skills-label"><span>skills</span></div>
             <div class="eq-row">
-              <input type="text" name="data.skill1" value="{{data.data.skill1}}"/>
+              <input type="text" name="system.skill1" value="{{data.system.skill1}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.skill2" value="{{data.data.skill2}}"/>
+              <input type="text" name="system.skill2" value="{{data.system.skill2}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.skill3" value="{{data.data.skill3}}"/>
+              <input type="text" name="system.skill3" value="{{data.system.skill3}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.skill4" value="{{data.data.skill4}}"/>
+              <input type="text" name="system.skill4" value="{{data.system.skill4}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.skill5" value="{{data.data.skill5}}"/>
+              <input type="text" name="system.skill5" value="{{data.system.skill5}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.skill6" value="{{data.data.skill6}}"/>
+              <input type="text" name="system.skill6" value="{{data.system.skill6}}"/>
             </div>
           </div>
         </div>
@@ -140,25 +140,25 @@
           <div class="eq-section on-your-belt">
             <div class="top-label"><span>on your belt</span></div>
             <div class="eq-row">
-              <input type="text" name="data.beltSlot1" value="{{data.data.beltSlot1}}"/>
+              <input type="text" name="system.beltSlot1" value="{{data.system.beltSlot1}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.beltSlot2" value="{{data.data.beltSlot2}}"/>
+              <input type="text" name="system.beltSlot2" value="{{data.system.beltSlot2}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.beltSlot3" value="{{data.data.beltSlot3}}"/>
+              <input type="text" name="system.beltSlot3" value="{{data.system.beltSlot3}}"/>
             </div>
           </div>
           <div class="eq-section on-your-back">
             <div class="top-label"><span>on your back</span></div>
             <div class="eq-row">
-              <input type="text" name="data.backSlot1" value="{{data.data.backSlot1}}"/>
+              <input type="text" name="system.backSlot1" value="{{data.system.backSlot1}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.backSlot2" value="{{data.data.backSlot2}}"/>
+              <input type="text" name="system.backSlot2" value="{{data.system.backSlot2}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.backSlot3" value="{{data.data.backSlot3}}"/>
+              <input type="text" name="system.backSlot3" value="{{data.system.backSlot3}}"/>
             </div>
           </div>
         </div>
@@ -166,34 +166,34 @@
           <div class="eq-section in-your-pockets">
             <div class="top-label"><span>in your pockets</span></div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot1" value="{{data.data.pocketSlot1}}"/>
+              <input type="text" name="system.pocketSlot1" value="{{data.system.pocketSlot1}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot2" value="{{data.data.pocketSlot2}}"/>
+              <input type="text" name="system.pocketSlot2" value="{{data.system.pocketSlot2}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot3" value="{{data.data.pocketSlot3}}"/>
+              <input type="text" name="system.pocketSlot3" value="{{data.system.pocketSlot3}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot4" value="{{data.data.pocketSlot4}}"/>
+              <input type="text" name="system.pocketSlot4" value="{{data.system.pocketSlot4}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot5" value="{{data.data.pocketSlot5}}"/>
+              <input type="text" name="system.pocketSlot5" value="{{data.system.pocketSlot5}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot6" value="{{data.data.pocketSlot6}}"/>
+              <input type="text" name="system.pocketSlot6" value="{{data.system.pocketSlot6}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot7" value="{{data.data.pocketSlot7}}"/>
+              <input type="text" name="system.pocketSlot7" value="{{data.system.pocketSlot7}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot8" value="{{data.data.pocketSlot8}}"/>
+              <input type="text" name="system.pocketSlot8" value="{{data.system.pocketSlot8}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot9" value="{{data.data.pocketSlot9}}"/>
+              <input type="text" name="system.pocketSlot9" value="{{data.system.pocketSlot9}}"/>
             </div>
             <div class="eq-row">
-              <input type="text" name="data.pocketSlot10" value="{{data.data.pocketSlot10}}"/>
+              <input type="text" name="system.pocketSlot10" value="{{data.system.pocketSlot10}}"/>
             </div>
           </div>
         </div>
