@@ -1,6 +1,7 @@
 # 1.0.1
 
 - Fix system.json for v10 warnings.
+- Fix bug in actor create that prevented duplication.
 
 # 1.0.0
 

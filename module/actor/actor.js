@@ -6,7 +6,7 @@ import { d20Formula } from "../utils.js";
 export class FSActor extends Actor {
   /** @override */
   static async create(data, options = {}) {
-    data.token = data.token || {};
+    data.prototypeToken = data.prototypeToken || {};
     let defaults = {};
     if (data.type === "character") {
       defaults = {
@@ -27,7 +27,7 @@ export class FSActor extends Actor {
         vision: true,
       };
     }
-    mergeObject(data.token, defaults, { overwrite: false });
+    mergeObject(data.prototypeToken, defaults, { overwrite: false });
     return super.create(data, options);
   }
 
