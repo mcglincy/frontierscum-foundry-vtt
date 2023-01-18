@@ -5,12 +5,15 @@
   "description": "Foundry VTT system for Frontier Scum.",
   "version": "1.0.0",
   "templateVersion": 2,
-  "author": "mcglintlock",
+  "authors": [
+    {
+      "name": "mcglintlock"
+    }
+  ],  
   "scripts": [],
   "esmodules": ["module/frontierscum.js"],
   "styles": ["css/frontierscum.css"],
-  "packs": [
-  ],
+  "packs": [],
   "languages": [
     {
       "lang": "en",

@@ -1,3 +1,7 @@
+# 1.0.1
+
+- Fix system.json for v10 warnings.
+
 # 1.0.0
 
 - Foundry v10 compatibility.
