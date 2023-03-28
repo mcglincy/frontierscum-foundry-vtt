@@ -11,13 +11,13 @@
           <div class="name-block"> 
             <div class="field-row name-row"> 
               <label>name</label>
-              <input type="text" name="name" value="{{actor.name}}" placeholder="Lightning Bolt" spellcheck="false"/>
+              <input type="text" name="name" value="{{actor.name}}" spellcheck="false"/>
             </div>
             <div class="field-row">
               <label>likes</label>
-              <input type="text" name="system.likes" value="{{data.system.likes}}" placeholder="Daily baths" spellcheck="false"/>
+              <input type="text" name="system.likes" value="{{data.system.likes}}" spellcheck="false"/>
               <label>type</label>
-              <input type="text" name="system.type" value="{{data.system.type}}" placeholder="Brown riding horse" spellcheck="false"/>
+              <input type="text" name="system.type" value="{{data.system.type}}" spellcheck="false"/>
             </div>
             <div class="field-row">
               <label>notes</label>
@@ -28,73 +28,81 @@
               <input type="text" name="system.vehicle" value="{{data.system.vehicle}}" spellcheck="false"/>
             </div>
           </div>
-          <div class="on-your-horse"> 
-            <div class="top-label" data-i18n="on_your_horse">on your horse</div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot1" value="{{data.system.slot1}}" spellcheck="false"/>
-            </div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot2" value="{{data.system.slot2}}" spellcheck="false"/>
-            </div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot3" value="{{data.system.slot3}}" spellcheck="false"/>
-            </div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot4" value="{{data.system.slot4}}" spellcheck="false"/>
-            </div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot5" value="{{data.system.slot5}}" spellcheck="false"/>
-            </div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot6" value="{{data.system.slot6}}" spellcheck="false"/>
-            </div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot7" value="{{data.system.slot7}}" spellcheck="false"/>
-            </div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot8" value="{{data.system.slot8}}" spellcheck="false"/>
-            </div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot9" value="{{data.system.slot9}}" spellcheck="false"/>
-            </div>
-            <div class="on-horse-row">
-              <input type="text" name="system.slot10" value="{{data.system.slot10}}" spellcheck="false"/>
-            </div>
-          </div>
-          <div class="stolen-block">
-            <div class="stats">
-              <div class="stat-row">         
-                <div class="stat-block"> 
-                  <label>stolen</label>
-                  <div class="horseshoe">
-                    <label class="check-container"><input type="checkbox" name="system.stolen" {{#if data.system.stolen}}checked{{/if}} />                <span class="checkmark"></span></label>
+          <div class="bottom-cols">
+            <div class="left-col"> 
+              <div class="portrait-block"><img src="{{actor.img}}" title="{{actor.name}}" data-edit="img"/></div>
+              <div class="stolen-block">
+                <div class="stats">
+                  <div class="stat-row">         
+                    <div class="stat-block"> 
+                      <label>stolen</label>
+                      <div class="horseshoe">
+                        <label class="check-container"><input type="checkbox" name="system.stolen" {{#if data.system.stolen}}checked{{/if}} />                <span class="checkmark"></span></label>
+                      </div>
+                    </div>
+                    <div class="stat-block"> 
+                      <label>hp</label>
+                      <div class="horseshoe">
+                        <input type="number" name="system.hp.value" value="{{data.system.hp.value}}" placeholder="0"/>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="stat-block"> 
-                  <label>hp</label>
-                  <div class="horseshoe">
-                    <input type="number" name="system.hp.value" value="{{data.system.hp.value}}" placeholder="0"/>
-                  </div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-block"> 
-                  <label>morale</label>
-                  <div class="horseshoe">
-                    <input type="number" name="system.morale" value="{{data.system.morale}}" placeholder="0"/>
-                  </div>
-                </div>
-                <div class="stat-block"> 
-                  <label data-i18n="max">max</label>
-                  <div class="horseshoe">
-                    <input type="number" name="system.hp.max" value="{{data.system.hp.max}}" placeholder="0"/>
+                  <div class="stat-row">
+                    <div class="stat-block"> 
+                      <label>morale</label>
+                      <div class="horseshoe">
+                        <input type="number" name="system.morale" value="{{data.system.morale}}" placeholder="0"/>
+                      </div>
+                    </div>
+                    <div class="stat-block"> 
+                      <label data-i18n="max">max</label>
+                      <div class="horseshoe">
+                        <input type="number" name="system.hp.max" value="{{data.system.hp.max}}" placeholder="0"/>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="right-col">
+              <div class="on-your-horse"> 
+                <div class="top-label" data-i18n="on_your_horse">on your horse</div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot1" value="{{data.system.slot1}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot2" value="{{data.system.slot2}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot3" value="{{data.system.slot3}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot4" value="{{data.system.slot4}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot5" value="{{data.system.slot5}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot6" value="{{data.system.slot6}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot7" value="{{data.system.slot7}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot8" value="{{data.system.slot8}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot9" value="{{data.system.slot9}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot10" value="{{data.system.slot10}}" spellcheck="false"/>
+                </div>
+                <div class="on-horse-row">
+                  <input type="text" name="system.slot11" value="{{data.system.slot11}}" spellcheck="false"/>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="horse1"> </div>
-          <div class="horse2"></div>
         </div>
       </div>
     </div>

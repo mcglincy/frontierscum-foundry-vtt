@@ -31,6 +31,39 @@
       }      
     }
   }
+  .bottom-cols {
+    display: flex;
+    .left-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      padding-left: 10px;
+      padding-right: 20px;
+      .portrait-block {
+        border: 2px solid black;
+        // padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // height: 234px;
+        // width: 234px;
+        height: 264px;
+        width: 264px;
+        margin-bottom: 10px;
+        img {
+          border: 2px solid black;
+          height: 254px;
+          width: 254px;
+          padding: 0;
+          margin: 0;
+        }  
+      }
+    }
+    .right-col {
+      flex: 1;
+    }
+  }
   .on-your-horse {
     display: flex;
     flex-direction: column;
@@ -38,11 +71,22 @@
     .on-horse-row {
       flex: 0 0 20px;
       padding: 2px;
+      input[type='number'],
+      input[type='text'] {
+        font-size: 0.9rem; 
+      }      
+      &:nth-child(10),
+      &:nth-child(11),
+      &:nth-child(12)
+       {
+        padding-left: 10px;
+      }
     }
   }
   .stolen-block {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
     .stats {
       width: 300px;
       .stat-row {
@@ -80,23 +124,4 @@
       }  
     }
   }
-  .horse1 {
-    background-image: url('https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead1.png');
-    background-size: 100% 100%;
-    height: 170px;
-    width: 170px;
-    position: absolute;
-    left: 10px;
-    top: 700px;
-  }  
-  .horse2 {
-    background-image: url('https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead2.png');
-    background-size: 100% 100%;
-    width: 170px;
-    height: 170px;
-    position: absolute;
-    left: 498px;
-    top: 700px;
-  }
-
 }

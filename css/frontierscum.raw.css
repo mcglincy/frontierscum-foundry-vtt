@@ -23,7 +23,7 @@
   background: transparent;
   border-bottom: 1px dotted black;
   font-family: "Inconsolata", monospace;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
 }
 .frontierscum textarea {
@@ -398,6 +398,10 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 .frontierscum .scumsheet-body .equipment-block {
   display: flex;
 }
+.frontierscum .scumsheet-body .equipment-block input[type=number],
+.frontierscum .scumsheet-body .equipment-block input[type=text] {
+  font-size: 0.9rem;
+}
 .frontierscum .scumsheet-body .equipment-block .eq-col-1 {
   display: flex;
   flex-direction: column;
@@ -530,6 +534,36 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   padding-left: 10px;
   text-align: left;
 }
+.frontierscum .horsesheet .horsesheet-body .bottom-cols {
+  display: flex;
+}
+.frontierscum .horsesheet .horsesheet-body .bottom-cols .left-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.frontierscum .horsesheet .horsesheet-body .bottom-cols .left-col .portrait-block {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 264px;
+  width: 264px;
+  margin-bottom: 10px;
+}
+.frontierscum .horsesheet .horsesheet-body .bottom-cols .left-col .portrait-block img {
+  border: 2px solid black;
+  height: 254px;
+  width: 254px;
+  padding: 0;
+  margin: 0;
+}
+.frontierscum .horsesheet .horsesheet-body .bottom-cols .right-col {
+  flex: 1;
+}
 .frontierscum .horsesheet .horsesheet-body .on-your-horse {
   display: flex;
   flex-direction: column;
@@ -539,9 +573,17 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   flex: 0 0 20px;
   padding: 2px;
 }
+.frontierscum .horsesheet .horsesheet-body .on-your-horse .on-horse-row input[type=number],
+.frontierscum .horsesheet .horsesheet-body .on-your-horse .on-horse-row input[type=text] {
+  font-size: 0.9rem;
+}
+.frontierscum .horsesheet .horsesheet-body .on-your-horse .on-horse-row:nth-child(10), .frontierscum .horsesheet .horsesheet-body .on-your-horse .on-horse-row:nth-child(11), .frontierscum .horsesheet .horsesheet-body .on-your-horse .on-horse-row:nth-child(12) {
+  padding-left: 10px;
+}
 .frontierscum .horsesheet .horsesheet-body .stolen-block {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .frontierscum .horsesheet .horsesheet-body .stolen-block .stats {
   width: 300px;
@@ -576,24 +618,6 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
 }
 .frontierscum .horsesheet .horsesheet-body .stolen-block .stats .stat-row .stat-block:last-child label {
   width: 80px;
-}
-.frontierscum .horsesheet .horsesheet-body .horse1 {
-  background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead1.png");
-  background-size: 100% 100%;
-  height: 170px;
-  width: 170px;
-  position: absolute;
-  left: 10px;
-  top: 700px;
-}
-.frontierscum .horsesheet .horsesheet-body .horse2 {
-  background-image: url("https://raw.githubusercontent.com/mcglincy/frontierscum-roll20/main/img/horsehead2.png");
-  background-size: 100% 100%;
-  width: 170px;
-  height: 170px;
-  position: absolute;
-  left: 498px;
-  top: 700px;
 }
 
 .frontierscum .npcsheet {

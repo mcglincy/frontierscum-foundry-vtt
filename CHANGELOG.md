@@ -1,3 +1,7 @@
+# 1.1.0
+
+- Adjust portrait to horse sheet, and adjust input font sizes.
+
 # 1.0.1
 
 - Fix system.json for v10 warnings.

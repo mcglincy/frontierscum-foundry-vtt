@@ -183,6 +183,10 @@
   }
   .equipment-block {
     display: flex;
+    input[type='number'],
+    input[type='text'] {
+      font-size: 0.9rem; 
+    }
     .eq-col-1 {
       display: flex;
       flex-direction: column;
