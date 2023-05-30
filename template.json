@@ -9,7 +9,7 @@
           "wits": 0,
           "luck": 0
         },
-        "hitPoints": {
+        "hp": {
           "max": 1,
           "value": 1
         },
