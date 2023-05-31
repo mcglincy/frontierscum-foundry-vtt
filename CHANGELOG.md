@@ -1,6 +1,7 @@
 # 2.0.0
 
 - v11 compatibility.
+- Fix Reward field to better match PDF character sheet.
 
 # 1.1.0
 
