@@ -27,11 +27,9 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "hitPoints",
   "secondaryTokenAttribute": null,
-  "minimumCoreVersion": "10",
-  "compatibleCoreVersion": "10",
   "compatibility": {
-    "minimum": 10,
-    "verified": 10
+    "minimum": 11,
+    "verified": 11
   },  
   "url": "https://github.com/mcglincy/frontierscum-foundry-vtt",
   "manifest": "https://github.com/mcglincy/frontierscum-foundry-vtt/releases/latest/download/system.json",
