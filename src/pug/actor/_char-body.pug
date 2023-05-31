@@ -10,9 +10,13 @@
       .field-row
         label wanted for
         input(type='text', name='system.wantedFor', value="{{data.system.wantedFor}}", placeholder='Repeated fraud', spellcheck='false')
-    .rewards
-      label(data-i18n='rewards') rewards
-      textarea(name='system.rewards') {{data.system.rewards}}
+    .reward
+      label(data-i18n='reward') reward
+      .reward-row
+        .input-wrapper
+          input(type='number', name='system.rewards', value="{{data.system.rewards}}") 
+        span.big-s
+          label S
   .abilities-block
     .ability-col
       each abil in ['grit', 'slick', 'wits', 'luck']

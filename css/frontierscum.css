@@ -241,18 +241,32 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   display: flex;
   width: 100%;
 }
-.frontierscum .scumsheet-body .name-block .rewards {
-  flex: 0 0 100px;
+.frontierscum .scumsheet-body .name-block .reward {
+  flex: 0 0 104px;
   margin-left: 10px;
   text-align: center;
 }
-.frontierscum .scumsheet-body .name-block .rewards label {
+.frontierscum .scumsheet-body .name-block .reward label {
   font-family: "Ultra", serif;
   font-size: 1.2rem;
+  height: 20px;
 }
-.frontierscum .scumsheet-body .name-block .rewards textarea {
-  height: 70px;
-  width: 115px;
+.frontierscum .scumsheet-body .name-block .reward .reward-row {
+  align-items: center;
+  display: flex;
+}
+.frontierscum .scumsheet-body .name-block .reward .reward-row .input-wrapper {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: 44px;
+  justify-content: center;
+}
+.frontierscum .scumsheet-body .name-block .reward .reward-row .big-s {
+  font-family: "Ultra", serif;
+  font-size: 1.4rem;
+  line-height: 1.2rem;
+  text-decoration: underline;
 }
 .frontierscum .scumsheet-body .abilities-block {
   display: flex;

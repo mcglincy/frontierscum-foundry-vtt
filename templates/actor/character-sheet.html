@@ -26,9 +26,14 @@
             <input type="text" name="system.wantedFor" value="{{data.system.wantedFor}}" placeholder="Repeated fraud" spellcheck="false"/>
           </div>
         </div>
-        <div class="rewards">
-          <label data-i18n="rewards">rewards</label>
-          <textarea name="system.rewards">{{data.system.rewards}}</textarea>
+        <div class="reward">
+          <label data-i18n="reward">reward</label>
+          <div class="reward-row">
+            <div class="input-wrapper">
+              <input type="number" name="system.rewards" value="{{data.system.rewards}}"/>
+            </div><span class="big-s">
+              <label>S</label></span>
+          </div>
         </div>
       </div>
       <div class="abilities-block">

@@ -22,17 +22,40 @@
         width: 100%;
       }
     }
-    .rewards {
-      flex: 0 0 100px;
+    .reward {
+      flex: 0 0 104px;
       margin-left: 10px;
       text-align: center;
       label {
         font-family: $slab-font;
         font-size: 1.2rem;
+        height: 20px;
       }
-      textarea {
-        height: 70px;
-        width: 115px;
+      .reward-row {
+        align-items: center;
+        // justify-content: center;
+        display: flex;
+        .input-wrapper {
+          align-items: center;
+          display: flex;
+          flex: 1;
+          height: 44px;
+          justify-content: center;
+          // padding: 10px;
+          input {
+            // border-bottom: none;
+            // height: 70px;
+            // width: 115px;
+            // flex: 1;
+          }  
+        }
+        .big-s {
+          font-family: $slab-font;
+          font-size: 1.4rem;
+          line-height: 1.2rem;
+          text-decoration: underline;
+          // flex: 0 0 30px;
+        }
       }
     }
   }

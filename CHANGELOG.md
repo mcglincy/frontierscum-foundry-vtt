@@ -1,3 +1,7 @@
+# 2.0.0
+
+- v11 compatibility.
+
 # 1.1.0
 
 - Adjust portrait to horse sheet, and adjust input font sizes.
