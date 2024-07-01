@@ -6,7 +6,7 @@ import FSActorSheet from "./actor-sheet.js";
 export class FSNpcSheet extends FSActorSheet {
   /** @override */
   static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
+    return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["frontierscum", "sheet", "actor", "npc"],
       template: "systems/frontierscum/templates/actor/npc-sheet.html",
       width: 705,

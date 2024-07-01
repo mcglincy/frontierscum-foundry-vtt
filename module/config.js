@@ -6,7 +6,6 @@ FS.flags = {
 };
 
 FS.itemTypes = {
-  background: "background",
   item: "item",
   protection: "protection",
   weapon: "weapon",

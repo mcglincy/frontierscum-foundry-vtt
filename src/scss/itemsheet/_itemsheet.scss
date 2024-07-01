@@ -1,0 +1,81 @@
+.frontierscum .itemsheet {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+
+  .fields {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    label {
+      font-family: $label-font;
+      font-size: 1.7rem;
+      margin-right: 4px;
+    }
+    input {
+      flex: 1;
+    }
+    textarea {
+      height: 100px;
+      padding: 4px;
+      width: 100%;
+    }    
+    .field-row {
+      display: flex;
+      width: 100%;
+    }
+  }    
+
+  .itemsheet-header {
+    display: flex;
+    flex: 0 0 167px;
+    margin-bottom: 10px;
+    .portrait {
+      align-items: center;
+      border: 2px solid black;
+      display: flex;
+      flex: 0 0 165px;
+      flex-direction: column;
+      justify-content: center;
+      .portrait-inner {
+        height: 154px;
+        width: 154px;        
+        img {
+          border: 2px solid black;
+          height: 155px;
+          width: 155px;        
+        }
+      }
+    }
+    .fields-col {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+      .button-row {
+        display: flex;
+        button {
+          background-color: black;
+          border: none;
+          border-radius: 0;
+          color: white;
+          cursor: pointer;          
+          font-family: $slab-font;
+          text-transform: uppercase;
+        }
+      }  
+  
+    }
+  }
+  .itemsheet-body {
+    .fields {
+      .field-row {
+        label {
+          // flex: 0 0 150px;
+          // text-align: right;
+        }  
+      }
+    }
+  }
+}

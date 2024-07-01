@@ -1,0 +1,25 @@
+
+<form class="frontierscum">
+  <div class="itemsheet">
+    <div class="itemsheet-header">
+      <div class="portrait"> 
+        <div class="portrait-inner"> <img src="{{item.img}}" title="{{item.name}}" data-edit="img"/></div>
+      </div>
+      <div class="fields-col">
+        <div class="fields"> 
+          <div class="field-row"> 
+            <label>name</label>
+            <input type="text" name="name" value="{{item.name}}" placeholder="" spellcheck="false"/>
+          </div>
+          <div class="field-row"> 
+            <label>cost</label>
+            <input type="number" name="cost" value="{{item.cost}}" placeholder="" spellcheck="false"/>
+          </div>
+          <div class="field-row"> 
+            <textarea name="system.notes">{{data.system.notes}}</textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

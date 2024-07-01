@@ -1,0 +1,16 @@
+form.frontierscum
+  .itemsheet
+    .itemsheet-header
+      .portrait 
+        .portrait-inner 
+          img(src='{{item.img}}', title='{{item.name}}', data-edit="img")
+      .fields-col
+        .fields 
+          .field-row 
+            label name
+            input(type='text', name='name', value="{{item.name}}", placeholder='', spellcheck='false')
+          .field-row 
+            label cost
+            input(type='number', name='cost', value="{{item.cost}}", placeholder='', spellcheck='false')
+          .field-row 
+            textarea(name='system.notes') {{data.system.notes}}

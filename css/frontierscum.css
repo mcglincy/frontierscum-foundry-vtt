@@ -724,3 +724,71 @@ body.sheet-darkmode .charsheet .frontierscum .scumsheet-body .equipment-block .e
   font-family: "Ultra", serif;
   text-transform: uppercase;
 }
+.frontierscum .itemsheet {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.frontierscum .itemsheet .fields {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.frontierscum .itemsheet .fields label {
+  font-family: "Smokum", cursive;
+  font-size: 1.7rem;
+  margin-right: 4px;
+}
+.frontierscum .itemsheet .fields input {
+  flex: 1;
+}
+.frontierscum .itemsheet .fields textarea {
+  height: 100px;
+  padding: 4px;
+  width: 100%;
+}
+.frontierscum .itemsheet .fields .field-row {
+  display: flex;
+  width: 100%;
+}
+.frontierscum .itemsheet .itemsheet-header {
+  display: flex;
+  flex: 0 0 167px;
+  margin-bottom: 10px;
+}
+.frontierscum .itemsheet .itemsheet-header .portrait {
+  align-items: center;
+  border: 2px solid black;
+  display: flex;
+  flex: 0 0 165px;
+  flex-direction: column;
+  justify-content: center;
+}
+.frontierscum .itemsheet .itemsheet-header .portrait .portrait-inner {
+  height: 154px;
+  width: 154px;
+}
+.frontierscum .itemsheet .itemsheet-header .portrait .portrait-inner img {
+  border: 2px solid black;
+  height: 155px;
+  width: 155px;
+}
+.frontierscum .itemsheet .itemsheet-header .fields-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.frontierscum .itemsheet .itemsheet-header .fields-col .button-row {
+  display: flex;
+}
+.frontierscum .itemsheet .itemsheet-header .fields-col .button-row button {
+  background-color: black;
+  border: none;
+  border-radius: 0;
+  color: white;
+  cursor: pointer;
+  font-family: "Ultra", serif;
+  text-transform: uppercase;
+}

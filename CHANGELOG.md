@@ -1,3 +1,8 @@
+# 3.0.0
+
+- Foundry v12 compatibility.
+- Add basic "item" item type and sheet.
+
 # 2.0.0
 
 - v11 compatibility.

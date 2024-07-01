@@ -27,7 +27,7 @@ export class FSActor extends Actor {
         vision: true,
       };
     }
-    mergeObject(data.prototypeToken, defaults, { overwrite: false });
+    foundry.utils.mergeObject(data.prototypeToken, defaults, { overwrite: false });
     return super.create(data, options);
   }
 
@@ -48,9 +48,9 @@ export class FSActor extends Actor {
 
   async rollMorale() {
     const roll = new Roll("2d6");
-    roll.evaluate({ async: false });
+    await roll.evaluate();
     let key = "";
-    if (roll.total > this.data.data.morale) {
+    if (roll.total > this.system.morale) {
       key = "FS.MoraleFleesOrSurrenders";
     } else {
       key = "FS.MoraleStandsStrong";
@@ -64,7 +64,7 @@ export class FSActor extends Actor {
 
   async rollReaction() {
     const roll = new Roll("2d6");
-    roll.evaluate({ async: false });
+    await roll.evaluate();
     let key = "";
     if (roll.total <= 3) {
       key = "FS.ReactionKillOrCapture";

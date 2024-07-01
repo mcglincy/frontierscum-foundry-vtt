@@ -81,9 +81,13 @@
     }    
   },
   "Item": {
-    "types": [
-    ],
-    "templates": {
-    }
+    "types": [ "item" ],
+    "templates": {      
+    },
+    "item": {
+      "templates": [],
+      "cost": 0,
+      "notes": ""
+    }    
   }
 }
