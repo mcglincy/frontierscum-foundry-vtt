@@ -12,8 +12,8 @@ import { FSItemSheet } from "./item/sheet/item-sheet.js";
 import { configureHandlebars } from "./handlebars.js";
 
 /**
-* Init hook.
-*/
+ * Init hook.
+ */
 Hooks.once("init", async function () {
   console.log(`Initializing Frontier Scum System`);
   game.frontierscum = {
@@ -25,28 +25,49 @@ Hooks.once("init", async function () {
   CONFIG.Item.documentClass = FSItem;
 
   CONFIG.FS = FS;
-  Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("frontierscum", FSCharacterSheet, {
-    types: ["character"],
-    makeDefault: true,
-    label: "FS.SheetClassCharacter",
-  });
-  Actors.registerSheet("frontierscum", FSHorseSheet, {
-    types: ["horse"],
-    makeDefault: true,
-    label: "FS.SheetClassHorse",
-  });
-  Actors.registerSheet("frontierscum", FSNpcSheet, {
-    types: ["npc"],
-    makeDefault: true,
-    label: "FS.SheetClassNpc",
-  });
-  Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("frontierscum", FSItemSheet, {
-    types: ["item"],
-    makeDefault: true,
-    label: "FS.SheetClassItem",
-  });
+  foundry.documents.collections.Actors.unregisterSheet(
+    "core",
+    foundry.appv1.sheets.ActorSheet,
+  );
+  foundry.documents.collections.Actors.registerSheet(
+    "frontierscum",
+    FSCharacterSheet,
+    {
+      types: ["character"],
+      makeDefault: true,
+      label: "FS.SheetClassCharacter",
+    },
+  );
+  foundry.documents.collections.Actors.registerSheet(
+    "frontierscum",
+    FSHorseSheet,
+    {
+      types: ["horse"],
+      makeDefault: true,
+      label: "FS.SheetClassHorse",
+    },
+  );
+  foundry.documents.collections.Actors.registerSheet(
+    "frontierscum",
+    FSNpcSheet,
+    {
+      types: ["npc"],
+      makeDefault: true,
+      label: "FS.SheetClassNpc",
+    },
+  );
+  foundry.documents.collections.Items.unregisterSheet(
+    "core",
+    foundry.appv1.sheets.ItemSheet,
+  );
+  foundry.documents.collections.Items.registerSheet(
+    "frontierscum",
+    FSItemSheet,
+    {
+      types: ["item"],
+      makeDefault: true,
+      label: "FS.SheetClassItem",
+    },
+  );
   configureHandlebars();
 });
-
