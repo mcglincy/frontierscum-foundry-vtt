@@ -1,3 +1,7 @@
+# 4.0.0
+
+- Foundry v13 compatibility.
+
 # 3.0.0
 
 - Foundry v12 compatibility.
