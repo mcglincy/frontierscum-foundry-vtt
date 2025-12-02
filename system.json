@@ -1,10 +1,8 @@
 {
-  "name": "frontierscum",
   "id": "frontierscum",
   "title": "Frontier Scum",
   "description": "Foundry VTT system for Frontier Scum.",
   "version": "4.0.0",
-  "templateVersion": 2,
   "authors": [
     {
       "name": "mcglintlock"
@@ -23,8 +21,10 @@
   ],
   "socket": true,
   "initiative": "1d6",
-  "gridDistance": 10,
-  "gridUnits": "ft",
+  "grid": {
+    "distance": 10,
+    "units": "ft"
+  },
   "primaryTokenAttribute": "hitPoints",
   "secondaryTokenAttribute": null,
   "compatibility": {
