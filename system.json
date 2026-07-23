@@ -2,7 +2,7 @@
   "id": "frontierscum",
   "title": "Frontier Scum",
   "description": "Foundry VTT system for Frontier Scum.",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "authors": [
     {
       "name": "mcglintlock"
@@ -28,8 +28,9 @@
   "primaryTokenAttribute": "hitPoints",
   "secondaryTokenAttribute": null,
   "compatibility": {
-    "minimum": 13,
-    "verified": 13
+    "maxium": 14,
+    "minimum": 14,
+    "verified": 14
   },
   "url": "https://github.com/mcglincy/frontierscum-foundry-vtt",
   "manifest": "https://github.com/mcglincy/frontierscum-foundry-vtt/releases/latest/download/system.json",
